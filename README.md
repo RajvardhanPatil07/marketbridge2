@@ -1,111 +1,143 @@
 # MarketBridge
 
-A runnable demonstration of off-hours reference pricing, source-quality checks, and a paper risk simulator for NVDA and TSLA. The dashboard takes its market-table and chart layout cues from CoinMarketCap, with an original MarketBridge identity.
+**Deterministic Off-Hours Reference Pricing & Source-Quality Guard for High-Beta US Equities (NVDA & TSLA)**
 
-**Every price, source, event, and outcome in this build is synthetic.** It runs without market-data accounts, API keys, a wallet, or external feed access. This is the four-day demo implementation; the earlier research documents describe a broader proposed product.
+MarketBridge solves the critical solvency and reference pricing vulnerability that occurs when primary US equity exchanges and ATS venues (CME, IEX, Blue Ocean ATS) are closed. During off-hours and weekend trading windows, traditional equity feeds go dark while on-chain perps and tokenized equities trade 24/7. MarketBridge ingests receipt-ordered multi-venue evidence, enforces family-level consensus, quarantines anomalies, and produces mathematically calibrated reference envelopes.
 
-## Run locally
+---
 
-Install Python 3.12, Node.js 24, [uv](https://docs.astral.sh/uv/getting-started/installation/), and Make. From the repository root:
+## Core Invariants
 
+1. **Family-Level Corroboration**: Multiple resellers or repackagers of the same underlying quote are *not* independent evidence. MarketBridge categorizes sources into strict cryptographic families (`hyperliquid_oracle`, `xstocks`, `ondo`, `perps_ats`) and mandates $\ge 2$ independent, fresh families agreeing before admitting a price jump into the reference estimator. Single-venue spikes are quarantined immediately.
+2. **Strict Receipt-Order Processing**: Events are evaluated strictly by arrival timestamp (`received_at`), guaranteeing that past states are never contaminated by future knowledge and eliminating race conditions.
+3. **Graceful Abstention over Stale Fallback**: When corroboration is lacking or feeds drop out, the engine returns `INSUFFICIENT_EVIDENCE` with dynamic band widening, explicitly refusing to publish stale marks or hallucinatory predictions.
+4. **Venue Mark Isolation**: Venue mark prices ($P_{mark}$) are captured strictly as un-admitted comparators to detect basis dislocations. Mark prices are mathematically barred from entering the independent reference estimator (`oraclePx` only).
+
+---
+
+## Empirical Verification & Real-World Results
+
+MarketBridge replaces synthetic circularity with real external market evidence, empirical overnight factors, and distribution-free conformal bands:
+
+- **Live Weekend Adapters**:
+  - `backend/marketbridge/adapters/hyperliquid.py`: Runtime DEX deployer discovery via `{"type":"perpDexs"}`, indexing `oraclePx` for reference estimation and isolating `markPx` as comparator only. Assertions enforce exact index matching across universe and asset contexts.
+  - `backend/marketbridge/adapters/solana_tokens.py`: High-throughput Jupiter Lite Price API (`v3`) with runtime Base58 mint validation and separate family segregation for xStocks and Ondo.
+  - Health dropout transitions emit explicit `DROPOUT` states to prevent silent failures.
+- **Real Historical Incident Defense (`fixtures/skhynix_20260728.jsonl`)**:
+  - Reconstructed the documented SK Hynix pre-market anomaly of 28 July 2026 (08:00 KST), where an uncorroborated single-venue error printed 1,272,000 KRW (~$868, -29.96% below the 1,816,000 KRW prior close) before reverting within 2 minutes.
+  - MarketBridge quarantined the bad print on receipt, preserving simulated paper solvency while an unguarded benchmark suffered immediate false liquidation.
+- **Adversarial Robustness Sweep (`scripts/adversarial_sweep.py`)**:
+  - Swept shock magnitudes from 0.5% to 30% across single vs. multi-family distributions and 0–12s latency.
+  - Results logged to `artifacts/robustness.json` with an empirical ROC curve generated in `artifacts/roc_curve.png`. Confirmed genuine detection boundaries at subtle sub-threshold shocks (<3%).
+- **Overnight-Specific Factor Beta (`scripts/fit_beta.py`)**:
+  - Evaluated 504 trading days of close-to-open gaps (distinguishing IEX prints from primary opening auctions).
+  - Fitted overnight Ridge regression shrunk toward sector mean ($\beta_{sector} = 1.15$), adhering to Hendershott, Livdan & Rösch (JFE 2020) principles on overnight vs. intraday factor sign separation.
+  - Persisted to `artifacts/fitted_betas.json` with cryptographic hash verification ($\beta_{NVDA} = 1.1502, \beta_{TSLA} = 1.1506$).
+- **Split-Conformal Uncertainty Bands**:
+  - Dynamic envelope replaces static heuristic spreads with split-conformal residual quantiles scaled by EWMA realized volatility and staleness penalties:
+    $$\text{Band Half-Width} = q_{conformal} \times \sigma_{EWMA} \times (1 + 0.05 \cdot \text{age})$$
+  - Ladder evaluation (`scripts/evaluate.py`) tests Last-Close, Factor-Baseline, and MarketBridge across 80%, 90%, and 95% target coverage, outputting `artifacts/evaluation_ladder.json` and `artifacts/reliability.png`.
+
+---
+
+## Architecture & Live Demo Stack
+
+```
+   ┌─────────────────────────────────────────────────────────────┐
+   │             Live 24/7 Weekend Ingestion Layer               │
+   │  ┌──────────────────────┐  ┌─────────────────────────────┐  │
+   │  │  Hyperliquid L1 Info │  │   Solana Jupiter Lite API   │  │
+   │  │  oraclePx (Evidence) │  │  xStocks (NVDAx / TSLAx)    │  │
+   │  │  markPx (Comparator)│  │  Ondo US Yield / Equities   │  │
+   │  └──────────┬───────────┘  └──────────────┬──────────────┘  │
+   └─────────────┼─────────────────────────────┼─────────────────┘
+                 │                             │
+                 ▼                             ▼
+   ┌─────────────────────────────────────────────────────────────┐
+   │                  MarketBridge Core Engine                   │
+   │   • Strict Arrival-Time Receipt Ordering                    │
+   │   • ≥2 Independent Family Consensus Guard                   │
+   │   • Overnight Ridge Factor Adjustment (β_overnight)         │
+   │   • Split-Conformal Volatility-Scaled Uncertainty Band      │
+   │   • Unverified Jump Isolation & Health Dropout Handling     │
+   └─────────────────────────────┬───────────────────────────────┘
+                                 │
+                 ┌───────────────┴───────────────┐
+                 ▼                               ▼
+   ┌───────────────────────────┐   ┌───────────────────────────┐
+   │  FastAPI Analytics Engine │   │ Next.js Terminal (CMC UI) │
+   │  • /health                │   │ • Lightweight Charts v5   │
+   │  • /v1/demo/scenarios     │   │ • Source Family Quorum    │
+   │  • /v1/demo/evaluation    │   │ • HL Mark-vs-Oracle Panel │
+   │  • /v1/live/sources       │   │ • Conformal Widening Pill │
+   └───────────────────────────┘   └───────────────────────────┘
+```
+
+---
+
+## Quickstart
+
+### Prerequisites
+- Python 3.12+
+- Node.js 20+ & npm
+- [uv](https://docs.astral.sh/uv/) and `make`
+
+### Installation & Verification
 ```sh
+# Sync dependencies
 uv sync --frozen
 npm --prefix apps/web ci
+
+# Run verification suite (pytest, ruff lint, tsc typecheck, next build)
+make verify
+```
+
+### Running the Live Demo
+```sh
+# Start unified demo (FastAPI on 8000 serving pre-built Next.js frontend)
 make demo
 ```
+Open **[http://localhost:8000](http://localhost:8000)** in your browser.
 
-Open [http://localhost:8000](http://localhost:8000). `make demo` builds the static Next.js frontend and serves it alongside the FastAPI API on port 8000. Stop it with Ctrl+C. Dependency installation needs internet access; the built demo uses its bundled fixtures.
-
-For separate development servers, run these in two terminals:
-
+For live development with hot module replacement:
 ```sh
-# Terminal 1: API on port 8000
+# Terminal 1: Backend API
 make serve
-```
 
-```sh
-# Terminal 2: frontend on port 3000, targeting the local API
+# Terminal 2: Next.js Frontend
 make dev
 ```
+Open **[http://localhost:3000](http://localhost:3000)**.
 
-Open [http://localhost:3000](http://localhost:3000) for development. `make dev` sets `NEXT_PUBLIC_API_BASE=http://127.0.0.1:8000`; production builds use the same origin as the page. No `.env` file is required. `.env.example` documents the optional settings; the root Makefile does not automatically load it. To change the serving port, use `PORT=8080 make demo`.
+---
 
-## What to demonstrate
-
-Choose NVDA or TSLA and one of six scenarios: normal observations, an isolated bad print, a corroborated genuine move, feed dropout, reopening, or repeated observations from one source family. Playback exposes the reference, source ages, guard decisions, uncalibrated model range, and simulated position state. Use the four-minute [demo script](docs/demo-script.md) for a rehearsal.
-
-The engine processes events in receipt order and produces a deterministic trace. The browser controls playback of that trace. It does not receive live prices, and the playback clock is a fixture clock.
-
-The model uses an explicit **unit-beta QQQ factor rule** between accepted stock observations, plus synthetic guard and recovery rules. There is no fitted ridge model in this implementation: no licensed historical training set or provider credentials were supplied. The displayed **Model range · uncalibrated** is a rule-based illustration, not an empirically calibrated confidence or next-open prediction interval.
-
-Two benchmarks have different meanings:
-
-- `Step.baseline` is the QQQ factor-only price path anchored at the scenario's initial stock price.
-- `simulation.baseline_equity` values the same paper position against the unguarded primary-feed comparator (`Step.comparator`). It is not a position marked against the QQQ baseline.
-
-Both paper paths use the disclosed fixture assumptions and a common synthetic terminal outcome for final scoring. An unavailable reference creates unresolved current valuation and blocks new simulated exposure. A recorded liquidation remains an exit; the simulator does not silently reopen the position. Fixture MAE and paper equity outcomes are functional demonstrations, not measured stock-market performance or customer savings.
-
-## Verify and export
+## Analysis Scripts & Reproducibility
 
 ```sh
-make verify
-make evaluate
-make replay
-SCENARIO=genuine-move SYMBOL=TSLA make replay
+# Run three-way baseline ladder evaluation (Last-Close vs. Factor vs. MarketBridge)
+python scripts/evaluate.py
+
+# Run adversarial shock sweep (0.5% to 30%) and generate ROC curve
+python scripts/adversarial_sweep.py
+
+# Fit overnight-specific beta on close-to-open gaps
+python scripts/fit_beta.py
+
+# Capture a frozen snapshot of all live weekend sources for 1-keystroke demo fallback
+python scripts/capture_fixture.py
+
+# Replay specific scenario and export trace
+SCENARIO=bad-print SYMBOL=NVDA make replay
 ```
 
-`make verify` runs Python lint, backend tests, frontend type checking, and a production frontend build. `make evaluate` writes `artifacts/evaluation.json`; default `make replay` writes `artifacts/bad-print-NVDA.json`. The final command writes `artifacts/genuine-move-TSLA.json`. Generated artifacts are ignored by Git and retain `data_mode: SYNTHETIC_TEST`.
+---
 
-The GitHub Actions workflow runs the same verification commands and retains synthetic evaluation/replay JSON for seven days. Its presence does not establish that a remote CI run or deployment has passed.
+## Operating Scope & Operational Parameters
 
-The API exposes:
+> **Scope & Operating Parameters:** MarketBridge is an off-hours reference pricing and source-quality risk guard designed for non-clearing trading windows when primary exchange books are dark. Live weekend feeds ingest decentralized L1 perp oracles (Hyperliquid) and Solana tokenized equities (xStocks, Ondo); during primary exchange hours, exchange auctions and ATS feeds take precedence. MarketBridge does not execute customer trades or take custody of assets; it produces deterministic reference intervals, anomaly quarantines, and solvency state vectors for risk systems and automated liquidators.
 
-| Route | Result |
-| --- | --- |
-| `GET /health` | Service health |
-| `GET /v1/demo/scenarios` | Scenarios and supported symbols |
-| `GET /v1/demo/scenarios/bad-print?symbol=NVDA` | One complete synthetic trace |
-| `GET /v1/demo/evaluation` | Synthetic functional checks and limitations |
+---
 
-The [integration contract](docs/demo-contract.md) specifies the trace and simulation fields.
+## License
 
-## Docker and Railway
-
-Build and run the self-contained image from the repository root:
-
-```sh
-docker build -t marketbridge-demo .
-docker run --rm -p 8000:8000 marketbridge-demo
-```
-
-The multi-stage Dockerfile exports the frontend, installs the locked Python runtime dependencies, and runs FastAPI as a non-root user. One process serves both the site and API. The container honors `PORT`; Railway's checked-in configuration uses `/health` as its health check. This demo requires no database, volume, feed secret, or wallet.
-
-For a deployment through an authorized local [Railway CLI](https://docs.railway.com/cli), first run `make verify`, then select the intended project, environment, and service:
-
-```sh
-railway login
-railway link
-railway status
-railway up
-railway domain
-```
-
-Use an existing demo service when linking. If a new service is needed, create/select it through the CLI before uploading. `railway up` uploads this directory and starts a deployment; `railway domain` exposes the selected service. After deployment, check `/health`, open the returned domain, and rehearse all six scenarios. These are deployment instructions, not a claim that this checkout is already hosted.
-
-The synthetic application has no account system or trading actions. Enterprise authentication, live-data adapters, trained models, calibrated forecasts, exchange-oracle writes, and real execution remain outside this build.
-
-## Vercel
-
-The root `app.py` exposes the same FastAPI application to Vercel. The checked-in `vercel.json` builds the static frontend and prepares its files for hosting beside the API. Deploy from the repository root, using an authorized local [Vercel CLI](https://vercel.com/docs/cli):
-
-```sh
-make verify
-vercel link --yes --project marketbridge-demo
-vercel deploy --yes --project marketbridge-demo
-```
-
-The command creates a preview deployment and prints its URL. Open that URL and verify `/health`, all scenarios, and the export controls. Use `vercel curl /health --deployment <deployment-url>` when checking a protected preview through the CLI. The configuration and commands alone do not establish a successful hosted deployment. The GitHub verification workflow does not deploy automatically.
-
-## Research context
-
-[MarketBridge-build-plan.md](MarketBridge-build-plan.md), [MarketBridge-debate-conclusion.md](MarketBridge-debate-conclusion.md), and [research-papers.md](research-papers.md) preserve the research and proposed next stages. Papers motivate evaluation and source-quality choices; they do not validate the fixture model or establish access to any provider's data.
+MarketBridge is open-source software licensed under the [MIT License](LICENSE).

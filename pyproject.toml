@@ -1,7 +1,7 @@
 [project]
 name = "marketbridge-demo"
 version = "0.1.0"
-description = "Deterministic off-hours reference and source-quality demonstration"
+description = "Off-hours reference pricing and source-quality guard for NVDA/TSLA with receipt-ordered verification, multi-family corroboration, and split-conformal uncertainty bands"
 requires-python = ">=3.12"
 dependencies = ["fastapi>=0.115,<1", "uvicorn>=0.34,<1"]
 

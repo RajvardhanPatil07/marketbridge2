@@ -1,6 +1,7 @@
 {
   "name": "marketbridge-web",
   "version": "0.1.0",
+  "description": "CoinMarketCap-grade terminal for MarketBridge off-hours reference pricing and multi-family guard telemetry",
   "private": true,
   "scripts": {
     "dev": "next dev",
