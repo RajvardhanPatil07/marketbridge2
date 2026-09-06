@@ -12,6 +12,8 @@ apps/web/out/
 artifacts/
 .DS_Store
 .vercel/
-public/
 .vercel
 .env*
+*.tsbuildinfo
+.impeccable/
+
