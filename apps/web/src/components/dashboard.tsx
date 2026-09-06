@@ -49,7 +49,15 @@ type Tab = "markets" | "sources" | "portfolio" | "evaluation" | "methodology";
 type SeriesKey = "reference" | "comparator" | "baseline" | "uncertainty" | "volume" | "markers";
 type Theme = "dark" | "light";
 
-const API_BASE = (process.env.NEXT_PUBLIC_API_BASE ?? "").replace(/\/$/, "");
+function getApiBase(): string {
+  if (process.env.NEXT_PUBLIC_API_BASE) {
+    return process.env.NEXT_PUBLIC_API_BASE.replace(/\/$/, "");
+  }
+  if (typeof window !== "undefined" && window.location.port === "3000") {
+    return `http://${window.location.hostname}:8000`;
+  }
+  return "";
+}
 
 const qualityLabels: Record<Quality, string> = {
   QUALIFIED: "Qualified",
@@ -89,7 +97,8 @@ const change = (val: number | null | undefined, base: number) => (val == null ||
 const humanize = (text: string) => text.replaceAll("_", " ").replace(/^\w/, (l) => l.toUpperCase());
 
 async function getJSON<T>(path: string, signal: AbortSignal): Promise<T> {
-  const response = await fetch(`${API_BASE}${path}`, { signal, headers: { Accept: "application/json" } });
+  const base = getApiBase();
+  const response = await fetch(`${base}${path}`, { signal, headers: { Accept: "application/json" } });
   if (!response.ok) throw new Error(`The demo service returned HTTP ${response.status}`);
   return response.json() as Promise<T>;
 }
