@@ -1,0 +1,506 @@
+{"bad_print": 1272000.0, "data_mode": "REAL_INCIDENT_RECONSTRUCTION", "duration_seconds": 150, "incident": "SK Hynix 28 Jul 2026 08:00 KST erroneous print: 1,272,000 KRW (-29.96% vs 1,816,000 KRW prior close)", "kind": "metadata", "prior_close": 1816000.0, "recovery_price": 1710000.0, "scenario_id": "skhynix_20260728", "symbol": "SKHYNIX"}
+{"ask": 1816181.6, "bid": 1815818.4, "event_time": 0, "id": "skhynix:primary:0", "ingestion_sequence": 1, "kind": "observation", "price": 1816000.0, "received_at": 0, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1815818.36, "bid": 1815455.24, "event_time": 0, "id": "skhynix:independent:0", "ingestion_sequence": 2, "kind": "observation", "price": 1815636.8, "received_at": 0, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:0", "ingestion_sequence": 3, "kind": "timer", "received_at": 0}
+{"ingestion_sequence": 4, "kind": "truth", "price": 1816000.0, "received_at": 0}
+{"ask": 1816181.6, "bid": 1815818.4, "event_time": 1, "id": "skhynix:primary:1", "ingestion_sequence": 5, "kind": "observation", "price": 1816000.0, "received_at": 1, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:1", "ingestion_sequence": 6, "kind": "timer", "received_at": 1}
+{"ingestion_sequence": 7, "kind": "truth", "price": 1816000.0, "received_at": 1}
+{"ask": 1816181.6, "bid": 1815818.4, "event_time": 2, "id": "skhynix:primary:2", "ingestion_sequence": 8, "kind": "observation", "price": 1816000.0, "received_at": 2, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:2", "ingestion_sequence": 9, "kind": "timer", "received_at": 2}
+{"ingestion_sequence": 10, "kind": "truth", "price": 1816000.0, "received_at": 2}
+{"ask": 1816181.6, "bid": 1815818.4, "event_time": 3, "id": "skhynix:primary:3", "ingestion_sequence": 11, "kind": "observation", "price": 1816000.0, "received_at": 3, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1816363.22, "bid": 1815999.98, "event_time": 3, "id": "skhynix:independent:3", "ingestion_sequence": 12, "kind": "observation", "price": 1816181.6, "received_at": 3, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:3", "ingestion_sequence": 13, "kind": "timer", "received_at": 3}
+{"ingestion_sequence": 14, "kind": "truth", "price": 1816000.0, "received_at": 3}
+{"ask": 1816181.6, "bid": 1815818.4, "event_time": 4, "id": "skhynix:primary:4", "ingestion_sequence": 15, "kind": "observation", "price": 1816000.0, "received_at": 4, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:4", "ingestion_sequence": 16, "kind": "timer", "received_at": 4}
+{"ingestion_sequence": 17, "kind": "truth", "price": 1816000.0, "received_at": 4}
+{"ask": 1816181.6, "bid": 1815818.4, "event_time": 5, "id": "skhynix:primary:5", "ingestion_sequence": 18, "kind": "observation", "price": 1816000.0, "received_at": 5, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:5", "ingestion_sequence": 19, "kind": "timer", "received_at": 5}
+{"ingestion_sequence": 20, "kind": "truth", "price": 1816000.0, "received_at": 5}
+{"ask": 1816181.6, "bid": 1815818.4, "event_time": 6, "id": "skhynix:primary:6", "ingestion_sequence": 21, "kind": "observation", "price": 1816000.0, "received_at": 6, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1815999.98, "bid": 1815636.82, "event_time": 6, "id": "skhynix:independent:6", "ingestion_sequence": 22, "kind": "observation", "price": 1815818.4, "received_at": 6, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:6", "ingestion_sequence": 23, "kind": "timer", "received_at": 6}
+{"ingestion_sequence": 24, "kind": "truth", "price": 1816000.0, "received_at": 6}
+{"ask": 1816181.6, "bid": 1815818.4, "event_time": 7, "id": "skhynix:primary:7", "ingestion_sequence": 25, "kind": "observation", "price": 1816000.0, "received_at": 7, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:7", "ingestion_sequence": 26, "kind": "timer", "received_at": 7}
+{"ingestion_sequence": 27, "kind": "truth", "price": 1816000.0, "received_at": 7}
+{"ask": 1816181.6, "bid": 1815818.4, "event_time": 8, "id": "skhynix:primary:8", "ingestion_sequence": 28, "kind": "observation", "price": 1816000.0, "received_at": 8, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:8", "ingestion_sequence": 29, "kind": "timer", "received_at": 8}
+{"ingestion_sequence": 30, "kind": "truth", "price": 1816000.0, "received_at": 8}
+{"ask": 1816181.6, "bid": 1815818.4, "event_time": 9, "id": "skhynix:primary:9", "ingestion_sequence": 31, "kind": "observation", "price": 1816000.0, "received_at": 9, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1816544.84, "bid": 1816181.56, "event_time": 9, "id": "skhynix:independent:9", "ingestion_sequence": 32, "kind": "observation", "price": 1816363.2, "received_at": 9, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:9", "ingestion_sequence": 33, "kind": "timer", "received_at": 9}
+{"ingestion_sequence": 34, "kind": "truth", "price": 1816000.0, "received_at": 9}
+{"ask": 1816181.6, "bid": 1815818.4, "event_time": 10, "id": "skhynix:primary:10", "ingestion_sequence": 35, "kind": "observation", "price": 1816000.0, "received_at": 10, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:10", "ingestion_sequence": 36, "kind": "timer", "received_at": 10}
+{"ingestion_sequence": 37, "kind": "truth", "price": 1816000.0, "received_at": 10}
+{"ask": 1816181.6, "bid": 1815818.4, "event_time": 11, "id": "skhynix:primary:11", "ingestion_sequence": 38, "kind": "observation", "price": 1816000.0, "received_at": 11, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:11", "ingestion_sequence": 39, "kind": "timer", "received_at": 11}
+{"ingestion_sequence": 40, "kind": "truth", "price": 1816000.0, "received_at": 11}
+{"ask": 1816181.6, "bid": 1815818.4, "event_time": 12, "id": "skhynix:primary:12", "ingestion_sequence": 41, "kind": "observation", "price": 1816000.0, "received_at": 12, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1816181.6, "bid": 1815818.4, "event_time": 12, "id": "skhynix:independent:12", "ingestion_sequence": 42, "kind": "observation", "price": 1816000.0, "received_at": 12, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:12", "ingestion_sequence": 43, "kind": "timer", "received_at": 12}
+{"ingestion_sequence": 44, "kind": "truth", "price": 1816000.0, "received_at": 12}
+{"ask": 1816181.6, "bid": 1815818.4, "event_time": 13, "id": "skhynix:primary:13", "ingestion_sequence": 45, "kind": "observation", "price": 1816000.0, "received_at": 13, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:13", "ingestion_sequence": 46, "kind": "timer", "received_at": 13}
+{"ingestion_sequence": 47, "kind": "truth", "price": 1816000.0, "received_at": 13}
+{"ask": 1816181.6, "bid": 1815818.4, "event_time": 14, "id": "skhynix:primary:14", "ingestion_sequence": 48, "kind": "observation", "price": 1816000.0, "received_at": 14, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:14", "ingestion_sequence": 49, "kind": "timer", "received_at": 14}
+{"ingestion_sequence": 50, "kind": "truth", "price": 1816000.0, "received_at": 14}
+{"ask": 1816181.6, "bid": 1815818.4, "event_time": 15, "id": "skhynix:primary:15", "ingestion_sequence": 51, "kind": "observation", "price": 1816000.0, "received_at": 15, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1815818.36, "bid": 1815455.24, "event_time": 15, "id": "skhynix:independent:15", "ingestion_sequence": 52, "kind": "observation", "price": 1815636.8, "received_at": 15, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:15", "ingestion_sequence": 53, "kind": "timer", "received_at": 15}
+{"ingestion_sequence": 54, "kind": "truth", "price": 1816000.0, "received_at": 15}
+{"ask": 1816181.6, "bid": 1815818.4, "event_time": 16, "id": "skhynix:primary:16", "ingestion_sequence": 55, "kind": "observation", "price": 1816000.0, "received_at": 16, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:16", "ingestion_sequence": 56, "kind": "timer", "received_at": 16}
+{"ingestion_sequence": 57, "kind": "truth", "price": 1816000.0, "received_at": 16}
+{"ask": 1816181.6, "bid": 1815818.4, "event_time": 17, "id": "skhynix:primary:17", "ingestion_sequence": 58, "kind": "observation", "price": 1816000.0, "received_at": 17, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:17", "ingestion_sequence": 59, "kind": "timer", "received_at": 17}
+{"ingestion_sequence": 60, "kind": "truth", "price": 1816000.0, "received_at": 17}
+{"ask": 1816181.6, "bid": 1815818.4, "event_time": 18, "id": "skhynix:primary:18", "ingestion_sequence": 61, "kind": "observation", "price": 1816000.0, "received_at": 18, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1816363.22, "bid": 1815999.98, "event_time": 18, "id": "skhynix:independent:18", "ingestion_sequence": 62, "kind": "observation", "price": 1816181.6, "received_at": 18, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:18", "ingestion_sequence": 63, "kind": "timer", "received_at": 18}
+{"ingestion_sequence": 64, "kind": "truth", "price": 1816000.0, "received_at": 18}
+{"ask": 1816181.6, "bid": 1815818.4, "event_time": 19, "id": "skhynix:primary:19", "ingestion_sequence": 65, "kind": "observation", "price": 1816000.0, "received_at": 19, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:19", "ingestion_sequence": 66, "kind": "timer", "received_at": 19}
+{"ingestion_sequence": 67, "kind": "truth", "price": 1816000.0, "received_at": 19}
+{"ask": 1816181.6, "bid": 1815818.4, "event_time": 20, "id": "skhynix:primary:20", "ingestion_sequence": 68, "kind": "observation", "price": 1816000.0, "received_at": 20, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:20", "ingestion_sequence": 69, "kind": "timer", "received_at": 20}
+{"ingestion_sequence": 70, "kind": "truth", "price": 1816000.0, "received_at": 20}
+{"ask": 1816181.6, "bid": 1815818.4, "event_time": 21, "id": "skhynix:primary:21", "ingestion_sequence": 71, "kind": "observation", "price": 1816000.0, "received_at": 21, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1815999.98, "bid": 1815636.82, "event_time": 21, "id": "skhynix:independent:21", "ingestion_sequence": 72, "kind": "observation", "price": 1815818.4, "received_at": 21, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:21", "ingestion_sequence": 73, "kind": "timer", "received_at": 21}
+{"ingestion_sequence": 74, "kind": "truth", "price": 1816000.0, "received_at": 21}
+{"ask": 1816181.6, "bid": 1815818.4, "event_time": 22, "id": "skhynix:primary:22", "ingestion_sequence": 75, "kind": "observation", "price": 1816000.0, "received_at": 22, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:22", "ingestion_sequence": 76, "kind": "timer", "received_at": 22}
+{"ingestion_sequence": 77, "kind": "truth", "price": 1816000.0, "received_at": 22}
+{"ask": 1816181.6, "bid": 1815818.4, "event_time": 23, "id": "skhynix:primary:23", "ingestion_sequence": 78, "kind": "observation", "price": 1816000.0, "received_at": 23, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:23", "ingestion_sequence": 79, "kind": "timer", "received_at": 23}
+{"ingestion_sequence": 80, "kind": "truth", "price": 1816000.0, "received_at": 23}
+{"ask": 1816181.6, "bid": 1815818.4, "event_time": 24, "id": "skhynix:primary:24", "ingestion_sequence": 81, "kind": "observation", "price": 1816000.0, "received_at": 24, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1816544.84, "bid": 1816181.56, "event_time": 24, "id": "skhynix:independent:24", "ingestion_sequence": 82, "kind": "observation", "price": 1816363.2, "received_at": 24, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:24", "ingestion_sequence": 83, "kind": "timer", "received_at": 24}
+{"ingestion_sequence": 84, "kind": "truth", "price": 1816000.0, "received_at": 24}
+{"ask": 1816181.6, "bid": 1815818.4, "event_time": 25, "id": "skhynix:primary:25", "ingestion_sequence": 85, "kind": "observation", "price": 1816000.0, "received_at": 25, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:25", "ingestion_sequence": 86, "kind": "timer", "received_at": 25}
+{"ingestion_sequence": 87, "kind": "truth", "price": 1816000.0, "received_at": 25}
+{"ask": 1816181.6, "bid": 1815818.4, "event_time": 26, "id": "skhynix:primary:26", "ingestion_sequence": 88, "kind": "observation", "price": 1816000.0, "received_at": 26, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:26", "ingestion_sequence": 89, "kind": "timer", "received_at": 26}
+{"ingestion_sequence": 90, "kind": "truth", "price": 1816000.0, "received_at": 26}
+{"ask": 1816181.6, "bid": 1815818.4, "event_time": 27, "id": "skhynix:primary:27", "ingestion_sequence": 91, "kind": "observation", "price": 1816000.0, "received_at": 27, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1816181.6, "bid": 1815818.4, "event_time": 27, "id": "skhynix:independent:27", "ingestion_sequence": 92, "kind": "observation", "price": 1816000.0, "received_at": 27, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:27", "ingestion_sequence": 93, "kind": "timer", "received_at": 27}
+{"ingestion_sequence": 94, "kind": "truth", "price": 1816000.0, "received_at": 27}
+{"ask": 1816181.6, "bid": 1815818.4, "event_time": 28, "id": "skhynix:primary:28", "ingestion_sequence": 95, "kind": "observation", "price": 1816000.0, "received_at": 28, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:28", "ingestion_sequence": 96, "kind": "timer", "received_at": 28}
+{"ingestion_sequence": 97, "kind": "truth", "price": 1816000.0, "received_at": 28}
+{"ask": 1816181.6, "bid": 1815818.4, "event_time": 29, "id": "skhynix:primary:29", "ingestion_sequence": 98, "kind": "observation", "price": 1816000.0, "received_at": 29, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:29", "ingestion_sequence": 99, "kind": "timer", "received_at": 29}
+{"ingestion_sequence": 100, "kind": "truth", "price": 1816000.0, "received_at": 29}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 30, "id": "skhynix:primary:30", "ingestion_sequence": 101, "kind": "observation", "price": 1272000.0, "received_at": 30, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1815999.98, "bid": 1815636.82, "event_time": 30, "id": "skhynix:independent:30", "ingestion_sequence": 102, "kind": "observation", "price": 1815818.4, "received_at": 30, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:30", "ingestion_sequence": 103, "kind": "timer", "received_at": 30}
+{"ingestion_sequence": 104, "kind": "truth", "price": 1816000.0, "received_at": 30}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 31, "id": "skhynix:primary:31", "ingestion_sequence": 105, "kind": "observation", "price": 1272000.0, "received_at": 31, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:31", "ingestion_sequence": 106, "kind": "timer", "received_at": 31}
+{"ingestion_sequence": 107, "kind": "truth", "price": 1815909.2, "received_at": 31}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 32, "id": "skhynix:primary:32", "ingestion_sequence": 108, "kind": "observation", "price": 1272000.0, "received_at": 32, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:32", "ingestion_sequence": 109, "kind": "timer", "received_at": 32}
+{"ingestion_sequence": 110, "kind": "truth", "price": 1815818.4, "received_at": 32}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 33, "id": "skhynix:primary:33", "ingestion_sequence": 111, "kind": "observation", "price": 1272000.0, "received_at": 33, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1815727.58, "bid": 1815364.47, "event_time": 33, "id": "skhynix:independent:33", "ingestion_sequence": 112, "kind": "observation", "price": 1815546.03, "received_at": 33, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:33", "ingestion_sequence": 113, "kind": "timer", "received_at": 33}
+{"ingestion_sequence": 114, "kind": "truth", "price": 1815727.6, "received_at": 33}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 34, "id": "skhynix:primary:34", "ingestion_sequence": 115, "kind": "observation", "price": 1272000.0, "received_at": 34, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:34", "ingestion_sequence": 116, "kind": "timer", "received_at": 34}
+{"ingestion_sequence": 117, "kind": "truth", "price": 1815636.8, "received_at": 34}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 35, "id": "skhynix:primary:35", "ingestion_sequence": 118, "kind": "observation", "price": 1272000.0, "received_at": 35, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:35", "ingestion_sequence": 119, "kind": "timer", "received_at": 35}
+{"ingestion_sequence": 120, "kind": "truth", "price": 1815546.0, "received_at": 35}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 36, "id": "skhynix:primary:36", "ingestion_sequence": 121, "kind": "observation", "price": 1272000.0, "received_at": 36, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1815455.18, "bid": 1815092.13, "event_time": 36, "id": "skhynix:independent:36", "ingestion_sequence": 122, "kind": "observation", "price": 1815273.65, "received_at": 36, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:36", "ingestion_sequence": 123, "kind": "timer", "received_at": 36}
+{"ingestion_sequence": 124, "kind": "truth", "price": 1815455.2, "received_at": 36}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 37, "id": "skhynix:primary:37", "ingestion_sequence": 125, "kind": "observation", "price": 1272000.0, "received_at": 37, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:37", "ingestion_sequence": 126, "kind": "timer", "received_at": 37}
+{"ingestion_sequence": 127, "kind": "truth", "price": 1815364.4, "received_at": 37}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 38, "id": "skhynix:primary:38", "ingestion_sequence": 128, "kind": "observation", "price": 1272000.0, "received_at": 38, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:38", "ingestion_sequence": 129, "kind": "timer", "received_at": 38}
+{"ingestion_sequence": 130, "kind": "truth", "price": 1815273.6, "received_at": 38}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 39, "id": "skhynix:primary:39", "ingestion_sequence": 131, "kind": "observation", "price": 1272000.0, "received_at": 39, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1815182.78, "bid": 1814819.78, "event_time": 39, "id": "skhynix:independent:39", "ingestion_sequence": 132, "kind": "observation", "price": 1815001.28, "received_at": 39, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:39", "ingestion_sequence": 133, "kind": "timer", "received_at": 39}
+{"ingestion_sequence": 134, "kind": "truth", "price": 1815182.8, "received_at": 39}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 40, "id": "skhynix:primary:40", "ingestion_sequence": 135, "kind": "observation", "price": 1272000.0, "received_at": 40, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:40", "ingestion_sequence": 136, "kind": "timer", "received_at": 40}
+{"ingestion_sequence": 137, "kind": "truth", "price": 1815092.0, "received_at": 40}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 41, "id": "skhynix:primary:41", "ingestion_sequence": 138, "kind": "observation", "price": 1272000.0, "received_at": 41, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:41", "ingestion_sequence": 139, "kind": "timer", "received_at": 41}
+{"ingestion_sequence": 140, "kind": "truth", "price": 1815001.2, "received_at": 41}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 42, "id": "skhynix:primary:42", "ingestion_sequence": 141, "kind": "observation", "price": 1272000.0, "received_at": 42, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1814910.38, "bid": 1814547.44, "event_time": 42, "id": "skhynix:independent:42", "ingestion_sequence": 142, "kind": "observation", "price": 1814728.91, "received_at": 42, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:42", "ingestion_sequence": 143, "kind": "timer", "received_at": 42}
+{"ingestion_sequence": 144, "kind": "truth", "price": 1814910.4, "received_at": 42}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 43, "id": "skhynix:primary:43", "ingestion_sequence": 145, "kind": "observation", "price": 1272000.0, "received_at": 43, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:43", "ingestion_sequence": 146, "kind": "timer", "received_at": 43}
+{"ingestion_sequence": 147, "kind": "truth", "price": 1814819.6, "received_at": 43}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 44, "id": "skhynix:primary:44", "ingestion_sequence": 148, "kind": "observation", "price": 1272000.0, "received_at": 44, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:44", "ingestion_sequence": 149, "kind": "timer", "received_at": 44}
+{"ingestion_sequence": 150, "kind": "truth", "price": 1814728.8, "received_at": 44}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 45, "id": "skhynix:primary:45", "ingestion_sequence": 151, "kind": "observation", "price": 1272000.0, "received_at": 45, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1814637.98, "bid": 1814275.09, "event_time": 45, "id": "skhynix:independent:45", "ingestion_sequence": 152, "kind": "observation", "price": 1814456.54, "received_at": 45, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:45", "ingestion_sequence": 153, "kind": "timer", "received_at": 45}
+{"ingestion_sequence": 154, "kind": "truth", "price": 1814638.0, "received_at": 45}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 46, "id": "skhynix:primary:46", "ingestion_sequence": 155, "kind": "observation", "price": 1272000.0, "received_at": 46, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:46", "ingestion_sequence": 156, "kind": "timer", "received_at": 46}
+{"ingestion_sequence": 157, "kind": "truth", "price": 1814547.2, "received_at": 46}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 47, "id": "skhynix:primary:47", "ingestion_sequence": 158, "kind": "observation", "price": 1272000.0, "received_at": 47, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:47", "ingestion_sequence": 159, "kind": "timer", "received_at": 47}
+{"ingestion_sequence": 160, "kind": "truth", "price": 1814456.4, "received_at": 47}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 48, "id": "skhynix:primary:48", "ingestion_sequence": 161, "kind": "observation", "price": 1272000.0, "received_at": 48, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1814365.58, "bid": 1814002.75, "event_time": 48, "id": "skhynix:independent:48", "ingestion_sequence": 162, "kind": "observation", "price": 1814184.16, "received_at": 48, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:48", "ingestion_sequence": 163, "kind": "timer", "received_at": 48}
+{"ingestion_sequence": 164, "kind": "truth", "price": 1814365.6, "received_at": 48}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 49, "id": "skhynix:primary:49", "ingestion_sequence": 165, "kind": "observation", "price": 1272000.0, "received_at": 49, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:49", "ingestion_sequence": 166, "kind": "timer", "received_at": 49}
+{"ingestion_sequence": 167, "kind": "truth", "price": 1814274.8, "received_at": 49}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 50, "id": "skhynix:primary:50", "ingestion_sequence": 168, "kind": "observation", "price": 1272000.0, "received_at": 50, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:50", "ingestion_sequence": 169, "kind": "timer", "received_at": 50}
+{"ingestion_sequence": 170, "kind": "truth", "price": 1814184.0, "received_at": 50}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 51, "id": "skhynix:primary:51", "ingestion_sequence": 171, "kind": "observation", "price": 1272000.0, "received_at": 51, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1814093.18, "bid": 1813730.4, "event_time": 51, "id": "skhynix:independent:51", "ingestion_sequence": 172, "kind": "observation", "price": 1813911.79, "received_at": 51, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:51", "ingestion_sequence": 173, "kind": "timer", "received_at": 51}
+{"ingestion_sequence": 174, "kind": "truth", "price": 1814093.2, "received_at": 51}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 52, "id": "skhynix:primary:52", "ingestion_sequence": 175, "kind": "observation", "price": 1272000.0, "received_at": 52, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:52", "ingestion_sequence": 176, "kind": "timer", "received_at": 52}
+{"ingestion_sequence": 177, "kind": "truth", "price": 1814002.4, "received_at": 52}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 53, "id": "skhynix:primary:53", "ingestion_sequence": 178, "kind": "observation", "price": 1272000.0, "received_at": 53, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:53", "ingestion_sequence": 179, "kind": "timer", "received_at": 53}
+{"ingestion_sequence": 180, "kind": "truth", "price": 1813911.6, "received_at": 53}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 54, "id": "skhynix:primary:54", "ingestion_sequence": 181, "kind": "observation", "price": 1272000.0, "received_at": 54, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1813820.78, "bid": 1813458.05, "event_time": 54, "id": "skhynix:independent:54", "ingestion_sequence": 182, "kind": "observation", "price": 1813639.42, "received_at": 54, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:54", "ingestion_sequence": 183, "kind": "timer", "received_at": 54}
+{"ingestion_sequence": 184, "kind": "truth", "price": 1813820.8, "received_at": 54}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 55, "id": "skhynix:primary:55", "ingestion_sequence": 185, "kind": "observation", "price": 1272000.0, "received_at": 55, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:55", "ingestion_sequence": 186, "kind": "timer", "received_at": 55}
+{"ingestion_sequence": 187, "kind": "truth", "price": 1813730.0, "received_at": 55}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 56, "id": "skhynix:primary:56", "ingestion_sequence": 188, "kind": "observation", "price": 1272000.0, "received_at": 56, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:56", "ingestion_sequence": 189, "kind": "timer", "received_at": 56}
+{"ingestion_sequence": 190, "kind": "truth", "price": 1813639.2, "received_at": 56}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 57, "id": "skhynix:primary:57", "ingestion_sequence": 191, "kind": "observation", "price": 1272000.0, "received_at": 57, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1813548.38, "bid": 1813185.71, "event_time": 57, "id": "skhynix:independent:57", "ingestion_sequence": 192, "kind": "observation", "price": 1813367.05, "received_at": 57, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:57", "ingestion_sequence": 193, "kind": "timer", "received_at": 57}
+{"ingestion_sequence": 194, "kind": "truth", "price": 1813548.4, "received_at": 57}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 58, "id": "skhynix:primary:58", "ingestion_sequence": 195, "kind": "observation", "price": 1272000.0, "received_at": 58, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:58", "ingestion_sequence": 196, "kind": "timer", "received_at": 58}
+{"ingestion_sequence": 197, "kind": "truth", "price": 1813457.6, "received_at": 58}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 59, "id": "skhynix:primary:59", "ingestion_sequence": 198, "kind": "observation", "price": 1272000.0, "received_at": 59, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:59", "ingestion_sequence": 199, "kind": "timer", "received_at": 59}
+{"ingestion_sequence": 200, "kind": "truth", "price": 1813366.8, "received_at": 59}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 60, "id": "skhynix:primary:60", "ingestion_sequence": 201, "kind": "observation", "price": 1272000.0, "received_at": 60, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1813275.98, "bid": 1812913.36, "event_time": 60, "id": "skhynix:independent:60", "ingestion_sequence": 202, "kind": "observation", "price": 1813094.67, "received_at": 60, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:60", "ingestion_sequence": 203, "kind": "timer", "received_at": 60}
+{"ingestion_sequence": 204, "kind": "truth", "price": 1813276.0, "received_at": 60}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 61, "id": "skhynix:primary:61", "ingestion_sequence": 205, "kind": "observation", "price": 1272000.0, "received_at": 61, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:61", "ingestion_sequence": 206, "kind": "timer", "received_at": 61}
+{"ingestion_sequence": 207, "kind": "truth", "price": 1813185.2, "received_at": 61}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 62, "id": "skhynix:primary:62", "ingestion_sequence": 208, "kind": "observation", "price": 1272000.0, "received_at": 62, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:62", "ingestion_sequence": 209, "kind": "timer", "received_at": 62}
+{"ingestion_sequence": 210, "kind": "truth", "price": 1813094.4, "received_at": 62}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 63, "id": "skhynix:primary:63", "ingestion_sequence": 211, "kind": "observation", "price": 1272000.0, "received_at": 63, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1813003.58, "bid": 1812641.02, "event_time": 63, "id": "skhynix:independent:63", "ingestion_sequence": 212, "kind": "observation", "price": 1812822.3, "received_at": 63, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:63", "ingestion_sequence": 213, "kind": "timer", "received_at": 63}
+{"ingestion_sequence": 214, "kind": "truth", "price": 1813003.6, "received_at": 63}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 64, "id": "skhynix:primary:64", "ingestion_sequence": 215, "kind": "observation", "price": 1272000.0, "received_at": 64, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:64", "ingestion_sequence": 216, "kind": "timer", "received_at": 64}
+{"ingestion_sequence": 217, "kind": "truth", "price": 1812912.8, "received_at": 64}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 65, "id": "skhynix:primary:65", "ingestion_sequence": 218, "kind": "observation", "price": 1272000.0, "received_at": 65, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:65", "ingestion_sequence": 219, "kind": "timer", "received_at": 65}
+{"ingestion_sequence": 220, "kind": "truth", "price": 1812822.0, "received_at": 65}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 66, "id": "skhynix:primary:66", "ingestion_sequence": 221, "kind": "observation", "price": 1272000.0, "received_at": 66, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1812731.18, "bid": 1812368.67, "event_time": 66, "id": "skhynix:independent:66", "ingestion_sequence": 222, "kind": "observation", "price": 1812549.93, "received_at": 66, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:66", "ingestion_sequence": 223, "kind": "timer", "received_at": 66}
+{"ingestion_sequence": 224, "kind": "truth", "price": 1812731.2, "received_at": 66}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 67, "id": "skhynix:primary:67", "ingestion_sequence": 225, "kind": "observation", "price": 1272000.0, "received_at": 67, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:67", "ingestion_sequence": 226, "kind": "timer", "received_at": 67}
+{"ingestion_sequence": 227, "kind": "truth", "price": 1812640.4, "received_at": 67}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 68, "id": "skhynix:primary:68", "ingestion_sequence": 228, "kind": "observation", "price": 1272000.0, "received_at": 68, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:68", "ingestion_sequence": 229, "kind": "timer", "received_at": 68}
+{"ingestion_sequence": 230, "kind": "truth", "price": 1812549.6, "received_at": 68}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 69, "id": "skhynix:primary:69", "ingestion_sequence": 231, "kind": "observation", "price": 1272000.0, "received_at": 69, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1812458.78, "bid": 1812096.33, "event_time": 69, "id": "skhynix:independent:69", "ingestion_sequence": 232, "kind": "observation", "price": 1812277.55, "received_at": 69, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:69", "ingestion_sequence": 233, "kind": "timer", "received_at": 69}
+{"ingestion_sequence": 234, "kind": "truth", "price": 1812458.8, "received_at": 69}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 70, "id": "skhynix:primary:70", "ingestion_sequence": 235, "kind": "observation", "price": 1272000.0, "received_at": 70, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:70", "ingestion_sequence": 236, "kind": "timer", "received_at": 70}
+{"ingestion_sequence": 237, "kind": "truth", "price": 1812368.0, "received_at": 70}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 71, "id": "skhynix:primary:71", "ingestion_sequence": 238, "kind": "observation", "price": 1272000.0, "received_at": 71, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:71", "ingestion_sequence": 239, "kind": "timer", "received_at": 71}
+{"ingestion_sequence": 240, "kind": "truth", "price": 1812277.2, "received_at": 71}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 72, "id": "skhynix:primary:72", "ingestion_sequence": 241, "kind": "observation", "price": 1272000.0, "received_at": 72, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1812186.38, "bid": 1811823.98, "event_time": 72, "id": "skhynix:independent:72", "ingestion_sequence": 242, "kind": "observation", "price": 1812005.18, "received_at": 72, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:72", "ingestion_sequence": 243, "kind": "timer", "received_at": 72}
+{"ingestion_sequence": 244, "kind": "truth", "price": 1812186.4, "received_at": 72}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 73, "id": "skhynix:primary:73", "ingestion_sequence": 245, "kind": "observation", "price": 1272000.0, "received_at": 73, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:73", "ingestion_sequence": 246, "kind": "timer", "received_at": 73}
+{"ingestion_sequence": 247, "kind": "truth", "price": 1812095.6, "received_at": 73}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 74, "id": "skhynix:primary:74", "ingestion_sequence": 248, "kind": "observation", "price": 1272000.0, "received_at": 74, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:74", "ingestion_sequence": 249, "kind": "timer", "received_at": 74}
+{"ingestion_sequence": 250, "kind": "truth", "price": 1812004.8, "received_at": 74}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 75, "id": "skhynix:primary:75", "ingestion_sequence": 251, "kind": "observation", "price": 1272000.0, "received_at": 75, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1811913.98, "bid": 1811551.64, "event_time": 75, "id": "skhynix:independent:75", "ingestion_sequence": 252, "kind": "observation", "price": 1811732.81, "received_at": 75, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:75", "ingestion_sequence": 253, "kind": "timer", "received_at": 75}
+{"ingestion_sequence": 254, "kind": "truth", "price": 1811914.0, "received_at": 75}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 76, "id": "skhynix:primary:76", "ingestion_sequence": 255, "kind": "observation", "price": 1272000.0, "received_at": 76, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:76", "ingestion_sequence": 256, "kind": "timer", "received_at": 76}
+{"ingestion_sequence": 257, "kind": "truth", "price": 1811823.2, "received_at": 76}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 77, "id": "skhynix:primary:77", "ingestion_sequence": 258, "kind": "observation", "price": 1272000.0, "received_at": 77, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:77", "ingestion_sequence": 259, "kind": "timer", "received_at": 77}
+{"ingestion_sequence": 260, "kind": "truth", "price": 1811732.4, "received_at": 77}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 78, "id": "skhynix:primary:78", "ingestion_sequence": 261, "kind": "observation", "price": 1272000.0, "received_at": 78, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1811641.58, "bid": 1811279.29, "event_time": 78, "id": "skhynix:independent:78", "ingestion_sequence": 262, "kind": "observation", "price": 1811460.44, "received_at": 78, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:78", "ingestion_sequence": 263, "kind": "timer", "received_at": 78}
+{"ingestion_sequence": 264, "kind": "truth", "price": 1811641.6, "received_at": 78}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 79, "id": "skhynix:primary:79", "ingestion_sequence": 265, "kind": "observation", "price": 1272000.0, "received_at": 79, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:79", "ingestion_sequence": 266, "kind": "timer", "received_at": 79}
+{"ingestion_sequence": 267, "kind": "truth", "price": 1811550.8, "received_at": 79}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 80, "id": "skhynix:primary:80", "ingestion_sequence": 268, "kind": "observation", "price": 1272000.0, "received_at": 80, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:80", "ingestion_sequence": 269, "kind": "timer", "received_at": 80}
+{"ingestion_sequence": 270, "kind": "truth", "price": 1811460.0, "received_at": 80}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 81, "id": "skhynix:primary:81", "ingestion_sequence": 271, "kind": "observation", "price": 1272000.0, "received_at": 81, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1811369.18, "bid": 1811006.94, "event_time": 81, "id": "skhynix:independent:81", "ingestion_sequence": 272, "kind": "observation", "price": 1811188.06, "received_at": 81, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:81", "ingestion_sequence": 273, "kind": "timer", "received_at": 81}
+{"ingestion_sequence": 274, "kind": "truth", "price": 1811369.2, "received_at": 81}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 82, "id": "skhynix:primary:82", "ingestion_sequence": 275, "kind": "observation", "price": 1272000.0, "received_at": 82, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:82", "ingestion_sequence": 276, "kind": "timer", "received_at": 82}
+{"ingestion_sequence": 277, "kind": "truth", "price": 1811278.4, "received_at": 82}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 83, "id": "skhynix:primary:83", "ingestion_sequence": 278, "kind": "observation", "price": 1272000.0, "received_at": 83, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:83", "ingestion_sequence": 279, "kind": "timer", "received_at": 83}
+{"ingestion_sequence": 280, "kind": "truth", "price": 1811187.6, "received_at": 83}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 84, "id": "skhynix:primary:84", "ingestion_sequence": 281, "kind": "observation", "price": 1272000.0, "received_at": 84, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1811096.78, "bid": 1810734.6, "event_time": 84, "id": "skhynix:independent:84", "ingestion_sequence": 282, "kind": "observation", "price": 1810915.69, "received_at": 84, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:84", "ingestion_sequence": 283, "kind": "timer", "received_at": 84}
+{"ingestion_sequence": 284, "kind": "truth", "price": 1811096.8, "received_at": 84}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 85, "id": "skhynix:primary:85", "ingestion_sequence": 285, "kind": "observation", "price": 1272000.0, "received_at": 85, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:85", "ingestion_sequence": 286, "kind": "timer", "received_at": 85}
+{"ingestion_sequence": 287, "kind": "truth", "price": 1811006.0, "received_at": 85}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 86, "id": "skhynix:primary:86", "ingestion_sequence": 288, "kind": "observation", "price": 1272000.0, "received_at": 86, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:86", "ingestion_sequence": 289, "kind": "timer", "received_at": 86}
+{"ingestion_sequence": 290, "kind": "truth", "price": 1810915.2, "received_at": 86}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 87, "id": "skhynix:primary:87", "ingestion_sequence": 291, "kind": "observation", "price": 1272000.0, "received_at": 87, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1810824.38, "bid": 1810462.25, "event_time": 87, "id": "skhynix:independent:87", "ingestion_sequence": 292, "kind": "observation", "price": 1810643.32, "received_at": 87, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:87", "ingestion_sequence": 293, "kind": "timer", "received_at": 87}
+{"ingestion_sequence": 294, "kind": "truth", "price": 1810824.4, "received_at": 87}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 88, "id": "skhynix:primary:88", "ingestion_sequence": 295, "kind": "observation", "price": 1272000.0, "received_at": 88, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:88", "ingestion_sequence": 296, "kind": "timer", "received_at": 88}
+{"ingestion_sequence": 297, "kind": "truth", "price": 1810733.6, "received_at": 88}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 89, "id": "skhynix:primary:89", "ingestion_sequence": 298, "kind": "observation", "price": 1272000.0, "received_at": 89, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:89", "ingestion_sequence": 299, "kind": "timer", "received_at": 89}
+{"ingestion_sequence": 300, "kind": "truth", "price": 1810642.8, "received_at": 89}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 90, "id": "skhynix:primary:90", "ingestion_sequence": 301, "kind": "observation", "price": 1272000.0, "received_at": 90, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1810551.98, "bid": 1810189.91, "event_time": 90, "id": "skhynix:independent:90", "ingestion_sequence": 302, "kind": "observation", "price": 1810370.94, "received_at": 90, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:90", "ingestion_sequence": 303, "kind": "timer", "received_at": 90}
+{"ingestion_sequence": 304, "kind": "truth", "price": 1810552.0, "received_at": 90}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 91, "id": "skhynix:primary:91", "ingestion_sequence": 305, "kind": "observation", "price": 1272000.0, "received_at": 91, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:91", "ingestion_sequence": 306, "kind": "timer", "received_at": 91}
+{"ingestion_sequence": 307, "kind": "truth", "price": 1810461.2, "received_at": 91}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 92, "id": "skhynix:primary:92", "ingestion_sequence": 308, "kind": "observation", "price": 1272000.0, "received_at": 92, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:92", "ingestion_sequence": 309, "kind": "timer", "received_at": 92}
+{"ingestion_sequence": 310, "kind": "truth", "price": 1810370.4, "received_at": 92}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 93, "id": "skhynix:primary:93", "ingestion_sequence": 311, "kind": "observation", "price": 1272000.0, "received_at": 93, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1810279.58, "bid": 1809917.56, "event_time": 93, "id": "skhynix:independent:93", "ingestion_sequence": 312, "kind": "observation", "price": 1810098.57, "received_at": 93, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:93", "ingestion_sequence": 313, "kind": "timer", "received_at": 93}
+{"ingestion_sequence": 314, "kind": "truth", "price": 1810279.6, "received_at": 93}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 94, "id": "skhynix:primary:94", "ingestion_sequence": 315, "kind": "observation", "price": 1272000.0, "received_at": 94, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:94", "ingestion_sequence": 316, "kind": "timer", "received_at": 94}
+{"ingestion_sequence": 317, "kind": "truth", "price": 1810188.8, "received_at": 94}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 95, "id": "skhynix:primary:95", "ingestion_sequence": 318, "kind": "observation", "price": 1272000.0, "received_at": 95, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:95", "ingestion_sequence": 319, "kind": "timer", "received_at": 95}
+{"ingestion_sequence": 320, "kind": "truth", "price": 1810098.0, "received_at": 95}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 96, "id": "skhynix:primary:96", "ingestion_sequence": 321, "kind": "observation", "price": 1272000.0, "received_at": 96, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1810007.18, "bid": 1809645.22, "event_time": 96, "id": "skhynix:independent:96", "ingestion_sequence": 322, "kind": "observation", "price": 1809826.2, "received_at": 96, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:96", "ingestion_sequence": 323, "kind": "timer", "received_at": 96}
+{"ingestion_sequence": 324, "kind": "truth", "price": 1810007.2, "received_at": 96}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 97, "id": "skhynix:primary:97", "ingestion_sequence": 325, "kind": "observation", "price": 1272000.0, "received_at": 97, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:97", "ingestion_sequence": 326, "kind": "timer", "received_at": 97}
+{"ingestion_sequence": 327, "kind": "truth", "price": 1809916.4, "received_at": 97}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 98, "id": "skhynix:primary:98", "ingestion_sequence": 328, "kind": "observation", "price": 1272000.0, "received_at": 98, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:98", "ingestion_sequence": 329, "kind": "timer", "received_at": 98}
+{"ingestion_sequence": 330, "kind": "truth", "price": 1809825.6, "received_at": 98}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 99, "id": "skhynix:primary:99", "ingestion_sequence": 331, "kind": "observation", "price": 1272000.0, "received_at": 99, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1809734.78, "bid": 1809372.87, "event_time": 99, "id": "skhynix:independent:99", "ingestion_sequence": 332, "kind": "observation", "price": 1809553.83, "received_at": 99, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:99", "ingestion_sequence": 333, "kind": "timer", "received_at": 99}
+{"ingestion_sequence": 334, "kind": "truth", "price": 1809734.8, "received_at": 99}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 100, "id": "skhynix:primary:100", "ingestion_sequence": 335, "kind": "observation", "price": 1272000.0, "received_at": 100, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:100", "ingestion_sequence": 336, "kind": "timer", "received_at": 100}
+{"ingestion_sequence": 337, "kind": "truth", "price": 1809644.0, "received_at": 100}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 101, "id": "skhynix:primary:101", "ingestion_sequence": 338, "kind": "observation", "price": 1272000.0, "received_at": 101, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:101", "ingestion_sequence": 339, "kind": "timer", "received_at": 101}
+{"ingestion_sequence": 340, "kind": "truth", "price": 1809553.2, "received_at": 101}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 102, "id": "skhynix:primary:102", "ingestion_sequence": 341, "kind": "observation", "price": 1272000.0, "received_at": 102, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1809462.38, "bid": 1809100.53, "event_time": 102, "id": "skhynix:independent:102", "ingestion_sequence": 342, "kind": "observation", "price": 1809281.45, "received_at": 102, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:102", "ingestion_sequence": 343, "kind": "timer", "received_at": 102}
+{"ingestion_sequence": 344, "kind": "truth", "price": 1809462.4, "received_at": 102}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 103, "id": "skhynix:primary:103", "ingestion_sequence": 345, "kind": "observation", "price": 1272000.0, "received_at": 103, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:103", "ingestion_sequence": 346, "kind": "timer", "received_at": 103}
+{"ingestion_sequence": 347, "kind": "truth", "price": 1809371.6, "received_at": 103}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 104, "id": "skhynix:primary:104", "ingestion_sequence": 348, "kind": "observation", "price": 1272000.0, "received_at": 104, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:104", "ingestion_sequence": 349, "kind": "timer", "received_at": 104}
+{"ingestion_sequence": 350, "kind": "truth", "price": 1809280.8, "received_at": 104}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 105, "id": "skhynix:primary:105", "ingestion_sequence": 351, "kind": "observation", "price": 1272000.0, "received_at": 105, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1809189.98, "bid": 1808828.18, "event_time": 105, "id": "skhynix:independent:105", "ingestion_sequence": 352, "kind": "observation", "price": 1809009.08, "received_at": 105, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:105", "ingestion_sequence": 353, "kind": "timer", "received_at": 105}
+{"ingestion_sequence": 354, "kind": "truth", "price": 1809190.0, "received_at": 105}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 106, "id": "skhynix:primary:106", "ingestion_sequence": 355, "kind": "observation", "price": 1272000.0, "received_at": 106, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:106", "ingestion_sequence": 356, "kind": "timer", "received_at": 106}
+{"ingestion_sequence": 357, "kind": "truth", "price": 1809099.2, "received_at": 106}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 107, "id": "skhynix:primary:107", "ingestion_sequence": 358, "kind": "observation", "price": 1272000.0, "received_at": 107, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:107", "ingestion_sequence": 359, "kind": "timer", "received_at": 107}
+{"ingestion_sequence": 360, "kind": "truth", "price": 1809008.4, "received_at": 107}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 108, "id": "skhynix:primary:108", "ingestion_sequence": 361, "kind": "observation", "price": 1272000.0, "received_at": 108, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1808917.58, "bid": 1808555.83, "event_time": 108, "id": "skhynix:independent:108", "ingestion_sequence": 362, "kind": "observation", "price": 1808736.71, "received_at": 108, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:108", "ingestion_sequence": 363, "kind": "timer", "received_at": 108}
+{"ingestion_sequence": 364, "kind": "truth", "price": 1808917.6, "received_at": 108}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 109, "id": "skhynix:primary:109", "ingestion_sequence": 365, "kind": "observation", "price": 1272000.0, "received_at": 109, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:109", "ingestion_sequence": 366, "kind": "timer", "received_at": 109}
+{"ingestion_sequence": 367, "kind": "truth", "price": 1808826.8, "received_at": 109}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 110, "id": "skhynix:primary:110", "ingestion_sequence": 368, "kind": "observation", "price": 1272000.0, "received_at": 110, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:110", "ingestion_sequence": 369, "kind": "timer", "received_at": 110}
+{"ingestion_sequence": 370, "kind": "truth", "price": 1808736.0, "received_at": 110}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 111, "id": "skhynix:primary:111", "ingestion_sequence": 371, "kind": "observation", "price": 1272000.0, "received_at": 111, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1808645.18, "bid": 1808283.49, "event_time": 111, "id": "skhynix:independent:111", "ingestion_sequence": 372, "kind": "observation", "price": 1808464.34, "received_at": 111, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:111", "ingestion_sequence": 373, "kind": "timer", "received_at": 111}
+{"ingestion_sequence": 374, "kind": "truth", "price": 1808645.2, "received_at": 111}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 112, "id": "skhynix:primary:112", "ingestion_sequence": 375, "kind": "observation", "price": 1272000.0, "received_at": 112, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:112", "ingestion_sequence": 376, "kind": "timer", "received_at": 112}
+{"ingestion_sequence": 377, "kind": "truth", "price": 1808554.4, "received_at": 112}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 113, "id": "skhynix:primary:113", "ingestion_sequence": 378, "kind": "observation", "price": 1272000.0, "received_at": 113, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:113", "ingestion_sequence": 379, "kind": "timer", "received_at": 113}
+{"ingestion_sequence": 380, "kind": "truth", "price": 1808463.6, "received_at": 113}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 114, "id": "skhynix:primary:114", "ingestion_sequence": 381, "kind": "observation", "price": 1272000.0, "received_at": 114, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1808372.78, "bid": 1808011.14, "event_time": 114, "id": "skhynix:independent:114", "ingestion_sequence": 382, "kind": "observation", "price": 1808191.96, "received_at": 114, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:114", "ingestion_sequence": 383, "kind": "timer", "received_at": 114}
+{"ingestion_sequence": 384, "kind": "truth", "price": 1808372.8, "received_at": 114}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 115, "id": "skhynix:primary:115", "ingestion_sequence": 385, "kind": "observation", "price": 1272000.0, "received_at": 115, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:115", "ingestion_sequence": 386, "kind": "timer", "received_at": 115}
+{"ingestion_sequence": 387, "kind": "truth", "price": 1808282.0, "received_at": 115}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 116, "id": "skhynix:primary:116", "ingestion_sequence": 388, "kind": "observation", "price": 1272000.0, "received_at": 116, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:116", "ingestion_sequence": 389, "kind": "timer", "received_at": 116}
+{"ingestion_sequence": 390, "kind": "truth", "price": 1808191.2, "received_at": 116}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 117, "id": "skhynix:primary:117", "ingestion_sequence": 391, "kind": "observation", "price": 1272000.0, "received_at": 117, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1808100.38, "bid": 1807738.8, "event_time": 117, "id": "skhynix:independent:117", "ingestion_sequence": 392, "kind": "observation", "price": 1807919.59, "received_at": 117, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:117", "ingestion_sequence": 393, "kind": "timer", "received_at": 117}
+{"ingestion_sequence": 394, "kind": "truth", "price": 1808100.4, "received_at": 117}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 118, "id": "skhynix:primary:118", "ingestion_sequence": 395, "kind": "observation", "price": 1272000.0, "received_at": 118, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:118", "ingestion_sequence": 396, "kind": "timer", "received_at": 118}
+{"ingestion_sequence": 397, "kind": "truth", "price": 1808009.6, "received_at": 118}
+{"ask": 1272127.2, "bid": 1271872.8, "event_time": 119, "id": "skhynix:primary:119", "ingestion_sequence": 398, "kind": "observation", "price": 1272000.0, "received_at": 119, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:119", "ingestion_sequence": 399, "kind": "timer", "received_at": 119}
+{"ingestion_sequence": 400, "kind": "truth", "price": 1807918.8, "received_at": 119}
+{"ask": 1710171.0, "bid": 1709829.0, "event_time": 120, "id": "skhynix:primary:120", "ingestion_sequence": 401, "kind": "observation", "price": 1710000.0, "received_at": 120, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1709999.98, "bid": 1709658.02, "event_time": 120, "id": "skhynix:independent:120", "ingestion_sequence": 402, "kind": "observation", "price": 1709829.0, "received_at": 120, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:120", "ingestion_sequence": 403, "kind": "timer", "received_at": 120}
+{"ingestion_sequence": 404, "kind": "truth", "price": 1710000.0, "received_at": 120}
+{"ask": 1710205.2, "bid": 1709863.2, "event_time": 121, "id": "skhynix:primary:121", "ingestion_sequence": 405, "kind": "observation", "price": 1710034.2, "received_at": 121, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:121", "ingestion_sequence": 406, "kind": "timer", "received_at": 121}
+{"ingestion_sequence": 407, "kind": "truth", "price": 1710034.2, "received_at": 121}
+{"ask": 1710239.41, "bid": 1709897.39, "event_time": 122, "id": "skhynix:primary:122", "ingestion_sequence": 408, "kind": "observation", "price": 1710068.4, "received_at": 122, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:122", "ingestion_sequence": 409, "kind": "timer", "received_at": 122}
+{"ingestion_sequence": 410, "kind": "truth", "price": 1710068.4, "received_at": 122}
+{"ask": 1710273.61, "bid": 1709931.59, "event_time": 123, "id": "skhynix:primary:123", "ingestion_sequence": 411, "kind": "observation", "price": 1710102.6, "received_at": 123, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1710102.58, "bid": 1709760.6, "event_time": 123, "id": "skhynix:independent:123", "ingestion_sequence": 412, "kind": "observation", "price": 1709931.59, "received_at": 123, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:123", "ingestion_sequence": 413, "kind": "timer", "received_at": 123}
+{"ingestion_sequence": 414, "kind": "truth", "price": 1710102.6, "received_at": 123}
+{"ask": 1710307.81, "bid": 1709965.79, "event_time": 124, "id": "skhynix:primary:124", "ingestion_sequence": 415, "kind": "observation", "price": 1710136.8, "received_at": 124, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:124", "ingestion_sequence": 416, "kind": "timer", "received_at": 124}
+{"ingestion_sequence": 417, "kind": "truth", "price": 1710136.8, "received_at": 124}
+{"ask": 1710342.02, "bid": 1709999.98, "event_time": 125, "id": "skhynix:primary:125", "ingestion_sequence": 418, "kind": "observation", "price": 1710171.0, "received_at": 125, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:125", "ingestion_sequence": 419, "kind": "timer", "received_at": 125}
+{"ingestion_sequence": 420, "kind": "truth", "price": 1710171.0, "received_at": 125}
+{"ask": 1710376.22, "bid": 1710034.18, "event_time": 126, "id": "skhynix:primary:126", "ingestion_sequence": 421, "kind": "observation", "price": 1710205.2, "received_at": 126, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1710205.18, "bid": 1709863.18, "event_time": 126, "id": "skhynix:independent:126", "ingestion_sequence": 422, "kind": "observation", "price": 1710034.18, "received_at": 126, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:126", "ingestion_sequence": 423, "kind": "timer", "received_at": 126}
+{"ingestion_sequence": 424, "kind": "truth", "price": 1710205.2, "received_at": 126}
+{"ask": 1710410.42, "bid": 1710068.38, "event_time": 127, "id": "skhynix:primary:127", "ingestion_sequence": 425, "kind": "observation", "price": 1710239.4, "received_at": 127, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:127", "ingestion_sequence": 426, "kind": "timer", "received_at": 127}
+{"ingestion_sequence": 427, "kind": "truth", "price": 1710239.4, "received_at": 127}
+{"ask": 1710444.63, "bid": 1710102.57, "event_time": 128, "id": "skhynix:primary:128", "ingestion_sequence": 428, "kind": "observation", "price": 1710273.6, "received_at": 128, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:128", "ingestion_sequence": 429, "kind": "timer", "received_at": 128}
+{"ingestion_sequence": 430, "kind": "truth", "price": 1710273.6, "received_at": 128}
+{"ask": 1710478.83, "bid": 1710136.77, "event_time": 129, "id": "skhynix:primary:129", "ingestion_sequence": 431, "kind": "observation", "price": 1710307.8, "received_at": 129, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1710307.78, "bid": 1709965.76, "event_time": 129, "id": "skhynix:independent:129", "ingestion_sequence": 432, "kind": "observation", "price": 1710136.77, "received_at": 129, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:129", "ingestion_sequence": 433, "kind": "timer", "received_at": 129}
+{"ingestion_sequence": 434, "kind": "truth", "price": 1710307.8, "received_at": 129}
+{"ask": 1710513.03, "bid": 1710170.97, "event_time": 130, "id": "skhynix:primary:130", "ingestion_sequence": 435, "kind": "observation", "price": 1710342.0, "received_at": 130, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:130", "ingestion_sequence": 436, "kind": "timer", "received_at": 130}
+{"ingestion_sequence": 437, "kind": "truth", "price": 1710342.0, "received_at": 130}
+{"ask": 1710547.24, "bid": 1710205.16, "event_time": 131, "id": "skhynix:primary:131", "ingestion_sequence": 438, "kind": "observation", "price": 1710376.2, "received_at": 131, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:131", "ingestion_sequence": 439, "kind": "timer", "received_at": 131}
+{"ingestion_sequence": 440, "kind": "truth", "price": 1710376.2, "received_at": 131}
+{"ask": 1710581.44, "bid": 1710239.36, "event_time": 132, "id": "skhynix:primary:132", "ingestion_sequence": 441, "kind": "observation", "price": 1710410.4, "received_at": 132, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1710410.38, "bid": 1710068.34, "event_time": 132, "id": "skhynix:independent:132", "ingestion_sequence": 442, "kind": "observation", "price": 1710239.36, "received_at": 132, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:132", "ingestion_sequence": 443, "kind": "timer", "received_at": 132}
+{"ingestion_sequence": 444, "kind": "truth", "price": 1710410.4, "received_at": 132}
+{"ask": 1710615.64, "bid": 1710273.56, "event_time": 133, "id": "skhynix:primary:133", "ingestion_sequence": 445, "kind": "observation", "price": 1710444.6, "received_at": 133, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:133", "ingestion_sequence": 446, "kind": "timer", "received_at": 133}
+{"ingestion_sequence": 447, "kind": "truth", "price": 1710444.6, "received_at": 133}
+{"ask": 1710649.85, "bid": 1710307.75, "event_time": 134, "id": "skhynix:primary:134", "ingestion_sequence": 448, "kind": "observation", "price": 1710478.8, "received_at": 134, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:134", "ingestion_sequence": 449, "kind": "timer", "received_at": 134}
+{"ingestion_sequence": 450, "kind": "truth", "price": 1710478.8, "received_at": 134}
+{"ask": 1710684.05, "bid": 1710341.95, "event_time": 135, "id": "skhynix:primary:135", "ingestion_sequence": 451, "kind": "observation", "price": 1710513.0, "received_at": 135, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1710512.98, "bid": 1710170.91, "event_time": 135, "id": "skhynix:independent:135", "ingestion_sequence": 452, "kind": "observation", "price": 1710341.95, "received_at": 135, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:135", "ingestion_sequence": 453, "kind": "timer", "received_at": 135}
+{"ingestion_sequence": 454, "kind": "truth", "price": 1710513.0, "received_at": 135}
+{"ask": 1710718.25, "bid": 1710376.15, "event_time": 136, "id": "skhynix:primary:136", "ingestion_sequence": 455, "kind": "observation", "price": 1710547.2, "received_at": 136, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:136", "ingestion_sequence": 456, "kind": "timer", "received_at": 136}
+{"ingestion_sequence": 457, "kind": "truth", "price": 1710547.2, "received_at": 136}
+{"ask": 1710752.46, "bid": 1710410.34, "event_time": 137, "id": "skhynix:primary:137", "ingestion_sequence": 458, "kind": "observation", "price": 1710581.4, "received_at": 137, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:137", "ingestion_sequence": 459, "kind": "timer", "received_at": 137}
+{"ingestion_sequence": 460, "kind": "truth", "price": 1710581.4, "received_at": 137}
+{"ask": 1710786.66, "bid": 1710444.54, "event_time": 138, "id": "skhynix:primary:138", "ingestion_sequence": 461, "kind": "observation", "price": 1710615.6, "received_at": 138, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1710615.58, "bid": 1710273.49, "event_time": 138, "id": "skhynix:independent:138", "ingestion_sequence": 462, "kind": "observation", "price": 1710444.54, "received_at": 138, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:138", "ingestion_sequence": 463, "kind": "timer", "received_at": 138}
+{"ingestion_sequence": 464, "kind": "truth", "price": 1710615.6, "received_at": 138}
+{"ask": 1710820.86, "bid": 1710478.74, "event_time": 139, "id": "skhynix:primary:139", "ingestion_sequence": 465, "kind": "observation", "price": 1710649.8, "received_at": 139, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:139", "ingestion_sequence": 466, "kind": "timer", "received_at": 139}
+{"ingestion_sequence": 467, "kind": "truth", "price": 1710649.8, "received_at": 139}
+{"ask": 1710855.07, "bid": 1710512.93, "event_time": 140, "id": "skhynix:primary:140", "ingestion_sequence": 468, "kind": "observation", "price": 1710684.0, "received_at": 140, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:140", "ingestion_sequence": 469, "kind": "timer", "received_at": 140}
+{"ingestion_sequence": 470, "kind": "truth", "price": 1710684.0, "received_at": 140}
+{"ask": 1710889.27, "bid": 1710547.13, "event_time": 141, "id": "skhynix:primary:141", "ingestion_sequence": 471, "kind": "observation", "price": 1710718.2, "received_at": 141, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1710718.18, "bid": 1710376.07, "event_time": 141, "id": "skhynix:independent:141", "ingestion_sequence": 472, "kind": "observation", "price": 1710547.13, "received_at": 141, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:141", "ingestion_sequence": 473, "kind": "timer", "received_at": 141}
+{"ingestion_sequence": 474, "kind": "truth", "price": 1710718.2, "received_at": 141}
+{"ask": 1710923.48, "bid": 1710581.32, "event_time": 142, "id": "skhynix:primary:142", "ingestion_sequence": 475, "kind": "observation", "price": 1710752.4, "received_at": 142, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:142", "ingestion_sequence": 476, "kind": "timer", "received_at": 142}
+{"ingestion_sequence": 477, "kind": "truth", "price": 1710752.4, "received_at": 142}
+{"ask": 1710957.68, "bid": 1710615.52, "event_time": 143, "id": "skhynix:primary:143", "ingestion_sequence": 478, "kind": "observation", "price": 1710786.6, "received_at": 143, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:143", "ingestion_sequence": 479, "kind": "timer", "received_at": 143}
+{"ingestion_sequence": 480, "kind": "truth", "price": 1710786.6, "received_at": 143}
+{"ask": 1710991.88, "bid": 1710649.72, "event_time": 144, "id": "skhynix:primary:144", "ingestion_sequence": 481, "kind": "observation", "price": 1710820.8, "received_at": 144, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1710820.78, "bid": 1710478.65, "event_time": 144, "id": "skhynix:independent:144", "ingestion_sequence": 482, "kind": "observation", "price": 1710649.72, "received_at": 144, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:144", "ingestion_sequence": 483, "kind": "timer", "received_at": 144}
+{"ingestion_sequence": 484, "kind": "truth", "price": 1710820.8, "received_at": 144}
+{"ask": 1711026.09, "bid": 1710683.91, "event_time": 145, "id": "skhynix:primary:145", "ingestion_sequence": 485, "kind": "observation", "price": 1710855.0, "received_at": 145, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:145", "ingestion_sequence": 486, "kind": "timer", "received_at": 145}
+{"ingestion_sequence": 487, "kind": "truth", "price": 1710855.0, "received_at": 145}
+{"ask": 1711060.29, "bid": 1710718.11, "event_time": 146, "id": "skhynix:primary:146", "ingestion_sequence": 488, "kind": "observation", "price": 1710889.2, "received_at": 146, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:146", "ingestion_sequence": 489, "kind": "timer", "received_at": 146}
+{"ingestion_sequence": 490, "kind": "truth", "price": 1710889.2, "received_at": 146}
+{"ask": 1711094.49, "bid": 1710752.31, "event_time": 147, "id": "skhynix:primary:147", "ingestion_sequence": 491, "kind": "observation", "price": 1710923.4, "received_at": 147, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1710923.38, "bid": 1710581.23, "event_time": 147, "id": "skhynix:independent:147", "ingestion_sequence": 492, "kind": "observation", "price": 1710752.31, "received_at": 147, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:147", "ingestion_sequence": 493, "kind": "timer", "received_at": 147}
+{"ingestion_sequence": 494, "kind": "truth", "price": 1710923.4, "received_at": 147}
+{"ask": 1711128.7, "bid": 1710786.5, "event_time": 148, "id": "skhynix:primary:148", "ingestion_sequence": 495, "kind": "observation", "price": 1710957.6, "received_at": 148, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:148", "ingestion_sequence": 496, "kind": "timer", "received_at": 148}
+{"ingestion_sequence": 497, "kind": "truth", "price": 1710957.6, "received_at": 148}
+{"ask": 1711162.9, "bid": 1710820.7, "event_time": 149, "id": "skhynix:primary:149", "ingestion_sequence": 498, "kind": "observation", "price": 1710991.8, "received_at": 149, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"id": "timer:149", "ingestion_sequence": 499, "kind": "timer", "received_at": 149}
+{"ingestion_sequence": 500, "kind": "truth", "price": 1710991.8, "received_at": 149}
+{"ask": 1711197.1, "bid": 1710854.9, "event_time": 150, "id": "skhynix:primary:150", "ingestion_sequence": 501, "kind": "observation", "price": 1711026.0, "received_at": 150, "representation": "USD_SHARE", "source_id": "iex", "symbol": "SKHYNIX"}
+{"ask": 1711025.98, "bid": 1710683.81, "event_time": 150, "id": "skhynix:independent:150", "ingestion_sequence": 502, "kind": "observation", "price": 1710854.9, "received_at": 150, "representation": "USD_SHARE", "source_id": "independent", "symbol": "SKHYNIX"}
+{"id": "timer:150", "ingestion_sequence": 503, "kind": "timer", "received_at": 150}
+{"ingestion_sequence": 504, "kind": "truth", "price": 1711026.0, "received_at": 150}
+{"ingestion_sequence": 505, "kind": "outcome", "price": 1710000.0, "received_at": 150, "source_family": "external_krx_auction_settlement"}

@@ -1,0 +1,653 @@
+{
+  "summary": {
+    "total_trials": 140,
+    "perturbation_count": 14,
+    "staleness_count": 5,
+    "small_perturbations_tested": [
+      0.5,
+      1.0,
+      1.5,
+      2.0,
+      2.5,
+      2.9
+    ],
+    "small_perturbation_failure_detected": true,
+    "small_perturbation_failure_note": "Genuine failures confirmed: 18 single-source perturbations under the 3.0% threshold were accepted (0% detection rate for <= 2.9% shocks). This validates that the evaluation test is realistic, uncircular, and rigorous.",
+    "fixed_jump_threshold": 0.03,
+    "auc_roc": 0.5
+  },
+  "roc_points": [
+    {
+      "perturbation_pct": 0.5,
+      "tpr": 0.4,
+      "fpr": 0.4
+    },
+    {
+      "perturbation_pct": 1.0,
+      "tpr": 0.4,
+      "fpr": 0.4
+    },
+    {
+      "perturbation_pct": 1.5,
+      "tpr": 0.4,
+      "fpr": 0.4
+    },
+    {
+      "perturbation_pct": 2.0,
+      "tpr": 0.4,
+      "fpr": 0.4
+    },
+    {
+      "perturbation_pct": 2.5,
+      "tpr": 0.4,
+      "fpr": 0.4
+    },
+    {
+      "perturbation_pct": 2.9,
+      "tpr": 0.4,
+      "fpr": 0.4
+    },
+    {
+      "perturbation_pct": 3.1,
+      "tpr": 1.0,
+      "fpr": 1.0
+    },
+    {
+      "perturbation_pct": 4.0,
+      "tpr": 1.0,
+      "fpr": 1.0
+    },
+    {
+      "perturbation_pct": 5.0,
+      "tpr": 1.0,
+      "fpr": 1.0
+    },
+    {
+      "perturbation_pct": 7.5,
+      "tpr": 1.0,
+      "fpr": 1.0
+    },
+    {
+      "perturbation_pct": 10.0,
+      "tpr": 1.0,
+      "fpr": 1.0
+    },
+    {
+      "perturbation_pct": 15.0,
+      "tpr": 1.0,
+      "fpr": 1.0
+    },
+    {
+      "perturbation_pct": 20.0,
+      "tpr": 1.0,
+      "fpr": 1.0
+    },
+    {
+      "perturbation_pct": 30.0,
+      "tpr": 1.0,
+      "fpr": 1.0
+    }
+  ],
+  "sweep_slices": [
+    {
+      "perturbation_pct": 0.5,
+      "staleness_sec": 0.0,
+      "single_source_quarantined": false,
+      "multi_family_quarantined": false,
+      "detection_rate": 0.0,
+      "false_rejection_rate": 0.0
+    },
+    {
+      "perturbation_pct": 0.5,
+      "staleness_sec": 2.0,
+      "single_source_quarantined": false,
+      "multi_family_quarantined": false,
+      "detection_rate": 0.0,
+      "false_rejection_rate": 0.0
+    },
+    {
+      "perturbation_pct": 0.5,
+      "staleness_sec": 5.0,
+      "single_source_quarantined": false,
+      "multi_family_quarantined": false,
+      "detection_rate": 0.0,
+      "false_rejection_rate": 0.0
+    },
+    {
+      "perturbation_pct": 0.5,
+      "staleness_sec": 8.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 0.5,
+      "staleness_sec": 12.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 1.0,
+      "staleness_sec": 0.0,
+      "single_source_quarantined": false,
+      "multi_family_quarantined": false,
+      "detection_rate": 0.0,
+      "false_rejection_rate": 0.0
+    },
+    {
+      "perturbation_pct": 1.0,
+      "staleness_sec": 2.0,
+      "single_source_quarantined": false,
+      "multi_family_quarantined": false,
+      "detection_rate": 0.0,
+      "false_rejection_rate": 0.0
+    },
+    {
+      "perturbation_pct": 1.0,
+      "staleness_sec": 5.0,
+      "single_source_quarantined": false,
+      "multi_family_quarantined": false,
+      "detection_rate": 0.0,
+      "false_rejection_rate": 0.0
+    },
+    {
+      "perturbation_pct": 1.0,
+      "staleness_sec": 8.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 1.0,
+      "staleness_sec": 12.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 1.5,
+      "staleness_sec": 0.0,
+      "single_source_quarantined": false,
+      "multi_family_quarantined": false,
+      "detection_rate": 0.0,
+      "false_rejection_rate": 0.0
+    },
+    {
+      "perturbation_pct": 1.5,
+      "staleness_sec": 2.0,
+      "single_source_quarantined": false,
+      "multi_family_quarantined": false,
+      "detection_rate": 0.0,
+      "false_rejection_rate": 0.0
+    },
+    {
+      "perturbation_pct": 1.5,
+      "staleness_sec": 5.0,
+      "single_source_quarantined": false,
+      "multi_family_quarantined": false,
+      "detection_rate": 0.0,
+      "false_rejection_rate": 0.0
+    },
+    {
+      "perturbation_pct": 1.5,
+      "staleness_sec": 8.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 1.5,
+      "staleness_sec": 12.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 2.0,
+      "staleness_sec": 0.0,
+      "single_source_quarantined": false,
+      "multi_family_quarantined": false,
+      "detection_rate": 0.0,
+      "false_rejection_rate": 0.0
+    },
+    {
+      "perturbation_pct": 2.0,
+      "staleness_sec": 2.0,
+      "single_source_quarantined": false,
+      "multi_family_quarantined": false,
+      "detection_rate": 0.0,
+      "false_rejection_rate": 0.0
+    },
+    {
+      "perturbation_pct": 2.0,
+      "staleness_sec": 5.0,
+      "single_source_quarantined": false,
+      "multi_family_quarantined": false,
+      "detection_rate": 0.0,
+      "false_rejection_rate": 0.0
+    },
+    {
+      "perturbation_pct": 2.0,
+      "staleness_sec": 8.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 2.0,
+      "staleness_sec": 12.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 2.5,
+      "staleness_sec": 0.0,
+      "single_source_quarantined": false,
+      "multi_family_quarantined": false,
+      "detection_rate": 0.0,
+      "false_rejection_rate": 0.0
+    },
+    {
+      "perturbation_pct": 2.5,
+      "staleness_sec": 2.0,
+      "single_source_quarantined": false,
+      "multi_family_quarantined": false,
+      "detection_rate": 0.0,
+      "false_rejection_rate": 0.0
+    },
+    {
+      "perturbation_pct": 2.5,
+      "staleness_sec": 5.0,
+      "single_source_quarantined": false,
+      "multi_family_quarantined": false,
+      "detection_rate": 0.0,
+      "false_rejection_rate": 0.0
+    },
+    {
+      "perturbation_pct": 2.5,
+      "staleness_sec": 8.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 2.5,
+      "staleness_sec": 12.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 2.9,
+      "staleness_sec": 0.0,
+      "single_source_quarantined": false,
+      "multi_family_quarantined": false,
+      "detection_rate": 0.0,
+      "false_rejection_rate": 0.0
+    },
+    {
+      "perturbation_pct": 2.9,
+      "staleness_sec": 2.0,
+      "single_source_quarantined": false,
+      "multi_family_quarantined": false,
+      "detection_rate": 0.0,
+      "false_rejection_rate": 0.0
+    },
+    {
+      "perturbation_pct": 2.9,
+      "staleness_sec": 5.0,
+      "single_source_quarantined": false,
+      "multi_family_quarantined": false,
+      "detection_rate": 0.0,
+      "false_rejection_rate": 0.0
+    },
+    {
+      "perturbation_pct": 2.9,
+      "staleness_sec": 8.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 2.9,
+      "staleness_sec": 12.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 3.1,
+      "staleness_sec": 0.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 3.1,
+      "staleness_sec": 2.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 3.1,
+      "staleness_sec": 5.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 3.1,
+      "staleness_sec": 8.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 3.1,
+      "staleness_sec": 12.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 4.0,
+      "staleness_sec": 0.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 4.0,
+      "staleness_sec": 2.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 4.0,
+      "staleness_sec": 5.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 4.0,
+      "staleness_sec": 8.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 4.0,
+      "staleness_sec": 12.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 5.0,
+      "staleness_sec": 0.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 5.0,
+      "staleness_sec": 2.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 5.0,
+      "staleness_sec": 5.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 5.0,
+      "staleness_sec": 8.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 5.0,
+      "staleness_sec": 12.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 7.5,
+      "staleness_sec": 0.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 7.5,
+      "staleness_sec": 2.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 7.5,
+      "staleness_sec": 5.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 7.5,
+      "staleness_sec": 8.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 7.5,
+      "staleness_sec": 12.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 10.0,
+      "staleness_sec": 0.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 10.0,
+      "staleness_sec": 2.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 10.0,
+      "staleness_sec": 5.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 10.0,
+      "staleness_sec": 8.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 10.0,
+      "staleness_sec": 12.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 15.0,
+      "staleness_sec": 0.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 15.0,
+      "staleness_sec": 2.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 15.0,
+      "staleness_sec": 5.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 15.0,
+      "staleness_sec": 8.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 15.0,
+      "staleness_sec": 12.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 20.0,
+      "staleness_sec": 0.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 20.0,
+      "staleness_sec": 2.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 20.0,
+      "staleness_sec": 5.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 20.0,
+      "staleness_sec": 8.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 20.0,
+      "staleness_sec": 12.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 30.0,
+      "staleness_sec": 0.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 30.0,
+      "staleness_sec": 2.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 30.0,
+      "staleness_sec": 5.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 30.0,
+      "staleness_sec": 8.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    },
+    {
+      "perturbation_pct": 30.0,
+      "staleness_sec": 12.0,
+      "single_source_quarantined": true,
+      "multi_family_quarantined": true,
+      "detection_rate": 1.0,
+      "false_rejection_rate": 1.0
+    }
+  ]
+}

@@ -13,11 +13,14 @@ class Engine:
     jump_threshold = 0.03
     agreement_tolerance = 0.005
 
-    def __init__(self, symbol: str):
-        if symbol not in SYMBOLS:
+    def __init__(self, symbol: str, initial_price: float | None = None):
+        if initial_price is not None:
+            self.initial_price = initial_price
+        elif symbol in SYMBOLS:
+            self.initial_price = SYMBOLS[symbol]
+        else:
             raise ValueError(f"Unsupported symbol: {symbol}")
         self.symbol = symbol
-        self.initial_price = SYMBOLS[symbol]
         self.clock = 0.0
         self.sources = {key: SourceState(key) for key in SOURCE_CONFIG}
         self.seen: set[str] = set()
