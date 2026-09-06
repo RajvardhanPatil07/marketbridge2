@@ -6,6 +6,7 @@ import math
 
 MODEL_VERSION = "synthetic-rules-v1.0.0"
 DATA_MODE = "SYNTHETIC_TEST"
+RUN_MODES = ("LIVE", "REPLAY", "SYNTHETIC_TEST")
 SYMBOLS = {"NVDA": 182.5, "TSLA": 346.8}
 START = datetime(2026, 9, 8, 13, 30, tzinfo=timezone.utc)
 SOURCE_CONFIG = {
@@ -14,7 +15,19 @@ SOURCE_CONFIG = {
     "reseller": ("IEX reseller · simulated", "underlying-a"),
     "auction": ("Official opening auction · simulated", "primary-auction"),
     "qqq": ("QQQ factor · simulated", "factor-market"),
+    # Live weekend sources (distinct families for independent corroboration)
+    "hyperliquid_oracle": ("Hyperliquid Oracle", "hyperliquid_oracle"),
+    "hyperliquid_mark": ("Hyperliquid Mark", "hyperliquid_mark"),
+    "xstocks": ("xStocks Solana", "xstocks"),
+    "ondo": ("Ondo Solana", "ondo"),
 }
+
+
+def validate_run_mode(mode: str) -> str:
+    """Validate run mode and ensure LIVE never silently degrades to SYNTHETIC_TEST."""
+    if mode not in RUN_MODES:
+        raise ValueError(f"Invalid run mode '{mode}'. Must be one of: {RUN_MODES}")
+    return mode
 
 
 def timestamp(seconds: float) -> str:
@@ -39,6 +52,7 @@ class SourceState:
     quarantined: bool = False
     candidate_price: float | None = None
     candidate_time: float | None = None
+    health: str = "HEALTHY"  # "HEALTHY", "DROPOUT", "DEGRADED"
 
 
 @dataclass

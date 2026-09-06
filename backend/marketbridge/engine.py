@@ -72,8 +72,15 @@ class Engine:
         self.clock = received
         if event.get("kind") == "timer":
             return
+        if event.get("kind") == "health":
+            source_id = event.get("source_id")
+            status = event.get("status", "DROPOUT")
+            if source_id in self.sources:
+                self.sources[source_id].health = status
+            self._assessment(event, "NONE", f"HEALTH_TRANSITION_{status}", self.last_valid)
+            return
         if event.get("kind") != "observation":
-            raise ValueError("The engine accepts only observations and timer events")
+            raise ValueError("The engine accepts only observations, health transitions, and timer events")
         pre = self.last_valid
         identity = str(
             event.get("id") or hashlib.sha256(json.dumps(event, sort_keys=True).encode()).hexdigest()
@@ -118,6 +125,12 @@ class Engine:
             return
         if source_id == "iex":
             self.comparator = price
+        if event.get("comparator_only") or source_id == "hyperliquid_mark":
+            self.comparator = price
+            source.price = price
+            source.event_time = event_time
+            self._assessment(event, "NONE", "COMPARATOR_OBSERVATION_UPDATED", pre)
+            return
         official = (
             source_id == "auction" and event.get("official_open") is True and event.get("verified") is True
         )
@@ -184,11 +197,12 @@ class Engine:
             raise ValueError("Snapshot requires the matching explicit timer event")
         age = self.clock - self.last_valid_at if self.last_valid_at is not None else self.clock
         factor_state = self.sources["qqq"]
+        factor_active = factor_state.latest_seen_time is not None
         factor_fresh = (
             factor_state.event_time is not None and self.clock - factor_state.event_time <= self.fresh_seconds
         )
         reference = self.last_valid
-        if reference is not None and factor_fresh:
+        if reference is not None and factor_active and factor_fresh:
             reference = self.stock_anchor * self.factor / self.factor_anchor
         reasons = [item["reason"] for item in self._step_assessments]
         if self.last_valid is None or self.pending or age > self.stale_seconds:
@@ -197,7 +211,7 @@ class Engine:
         elif self.recovered_at == self.clock:
             quality = "RECOVERING"
             reasons.append("QUALIFIED_RECOVERY_REANCHORS_STOCK_AND_FACTOR")
-        elif age > self.fresh_seconds or not factor_fresh:
+        elif age > self.fresh_seconds or (factor_active and not factor_fresh):
             quality = "CAUTION"
             reasons.append("SOURCE_AGE_EXCEEDS_FRESHNESS_POLICY")
         else:
@@ -210,7 +224,8 @@ class Engine:
         underlying = [
             s
             for key, s in self.sources.items()
-            if key != "qqq"
+            if key not in ("qqq", "hyperliquid_mark")
+            and not SOURCE_CONFIG[key][1].startswith("hyperliquid_mark")
             and s.event_time is not None
             and not s.quarantined
             and self.clock - s.event_time <= self.fresh_seconds
@@ -220,9 +235,13 @@ class Engine:
         for source_id, state in self.sources.items():
             if source_id == "reseller" and state.latest_seen_time is None:
                 continue
+            if source_id in ("hyperliquid_oracle", "hyperliquid_mark", "xstocks", "ondo") and state.latest_seen_time is None:
+                continue
             age_source = self.clock - state.event_time if state.event_time is not None else self.clock
             status = (
-                "MISSING"
+                "DROPOUT"
+                if state.health == "DROPOUT"
+                else "MISSING"
                 if state.event_time is None
                 else "FRESH"
                 if age_source <= self.fresh_seconds
