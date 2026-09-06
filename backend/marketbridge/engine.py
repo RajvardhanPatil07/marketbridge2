@@ -13,7 +13,15 @@ class Engine:
     jump_threshold = 0.03
     agreement_tolerance = 0.005
 
-    def __init__(self, symbol: str, initial_price: float | None = None):
+    def __init__(
+        self,
+        symbol: str,
+        initial_price: float | None = None,
+        beta: float | None = None,
+        conformal_q: float | None = None,
+        target_coverage: float = 0.90,
+        calibration_samples: int = 350,
+    ):
         if initial_price is not None:
             self.initial_price = initial_price
         elif symbol in SYMBOLS:
@@ -21,6 +29,14 @@ class Engine:
         else:
             raise ValueError(f"Unsupported symbol: {symbol}")
         self.symbol = symbol
+        self.beta = beta if beta is not None else 1.0
+        self.target_coverage = target_coverage
+        default_q = 0.0194 if symbol == "NVDA" else (0.0258 if symbol == "TSLA" else 0.0150)
+        self.conformal_q = conformal_q if conformal_q is not None else default_q
+        self.calibration_samples = calibration_samples
+        self.ewma_vol = 0.0050
+        self.baseline_vol = 0.0050
+        self.last_observation_price: float | None = None
         self.clock = 0.0
         self.sources = {key: SourceState(key) for key in SOURCE_CONFIG}
         self.seen: set[str] = set()
@@ -62,6 +78,10 @@ class Engine:
         source.quarantined = False
         source.candidate_price = source.candidate_time = None
         self.pending.pop(source.source_id, None)
+        if self.last_observation_price is not None and self.last_observation_price > 0:
+            ret = abs(price / self.last_observation_price - 1.0)
+            self.ewma_vol = 0.90 * self.ewma_vol + 0.10 * ret
+        self.last_observation_price = price
         self.stock_anchor = self.last_valid = price
         self.factor_anchor = self.factor
         self.last_valid_at = event_time
@@ -206,7 +226,9 @@ class Engine:
         )
         reference = self.last_valid
         if reference is not None and factor_active and factor_fresh:
-            reference = self.stock_anchor * self.factor / self.factor_anchor
+            factor_return = (self.factor / self.factor_anchor) - 1.0
+            expected_stock_return = self.beta * factor_return
+            reference = self.stock_anchor * (1.0 + expected_stock_return)
         reasons = [item["reason"] for item in self._step_assessments]
         if self.last_valid is None or self.pending or age > self.stale_seconds:
             quality, reference = "INSUFFICIENT_EVIDENCE", None
@@ -271,7 +293,9 @@ class Engine:
             )
         equity = self.reference_account.mark(reference)
         baseline_equity = self.baseline_account.mark(self.comparator)
-        spread = 0.0025 + age * 0.0005
+        vol_scale = max(0.5, min(2.5, self.ewma_vol / self.baseline_vol))
+        staleness_penalty = 0.05 * age
+        spread = self.conformal_q * vol_scale * (1.0 + staleness_penalty)
         allowed = (
             quality in ("QUALIFIED", "CAUTION", "RECOVERING")
             and reference is not None
@@ -287,9 +311,19 @@ class Engine:
             "last_valid": self.last_valid,
             "comparator": self.comparator,
             "factor": self.factor,
-            "baseline": self.initial_price * self.factor / 480.0,
+            "beta": self.beta,
+            "baseline": self.initial_price * (1.0 + self.beta * (self.factor / 480.0 - 1.0)),
             "lower": reference * (1 - spread) if reference is not None else None,
             "upper": reference * (1 + spread) if reference is not None else None,
+            "spread": spread,
+            "band": {
+                "coverage": self.target_coverage,
+                "mean_width_bps": round(2 * spread * 10000, 1),
+                "sample_count": self.calibration_samples,
+                "conformal_quantile_bps": round(self.conformal_q * 10000, 1),
+                "vol_scale": round(vol_scale, 3),
+                "staleness_penalty": round(staleness_penalty, 3),
+            },
             "quality": quality,
             "assessment": assessment,
             "reasons": list(dict.fromkeys(reasons)),

@@ -1,0 +1,60 @@
+{
+  "model_version": "overnight-ridge-conformal-v1",
+  "description": "Overnight-specific close-to-open beta with Ridge shrinkage toward sector mean",
+  "literature_reference": "Hendershott, Livdan & R\u00f6sch (JFE 2020)",
+  "open_price_source": "IEX-derived open (not official exchange opening auction)",
+  "train_test_split": "chronological_70_30",
+  "symbols": {
+    "NVDA": {
+      "symbol": "NVDA",
+      "beta_cto": 1.1502,
+      "alpha_cto": 0.000481,
+      "sector_prior": 1.15,
+      "train_samples": 352,
+      "test_samples": 152,
+      "train_metrics": {
+        "r2": 0.3742,
+        "mae_bps": 93.99,
+        "rmse_bps": 118.02,
+        "residual_std": 0.011836
+      },
+      "test_metrics": {
+        "r2": 0.3383,
+        "mae_bps": 95.96,
+        "rmse_bps": 126.43,
+        "residual_std": 0.012727
+      },
+      "conformal_quantiles": {
+        "q_80": 0.015414,
+        "q_90": 0.019429,
+        "q_95": 0.025251
+      }
+    },
+    "TSLA": {
+      "symbol": "TSLA",
+      "beta_cto": 1.1506,
+      "alpha_cto": -0.000891,
+      "sector_prior": 1.15,
+      "train_samples": 352,
+      "test_samples": 152,
+      "train_metrics": {
+        "r2": 0.3047,
+        "mae_bps": 126.95,
+        "rmse_bps": 159.44,
+        "residual_std": 0.015989
+      },
+      "test_metrics": {
+        "r2": 0.3296,
+        "mae_bps": 117.11,
+        "rmse_bps": 145.31,
+        "residual_std": 0.014627
+      },
+      "conformal_quantiles": {
+        "q_80": 0.020095,
+        "q_90": 0.02576,
+        "q_95": 0.031791
+      }
+    }
+  },
+  "sha256": "61248ecc994b606e985dcf50b2560e8be61360766e7a3bd27ab1f7ba7bf3a163"
+}

@@ -1,0 +1,667 @@
+{
+  "evaluation_kind": "three_way_baseline_ladder",
+  "open_price_source": "IEX-derived open (not official exchange opening auction)",
+  "model_version": "marketbridge-conformal-ladder-v1",
+  "literature_reference": "Hendershott, Livdan & R\u00f6sch (JFE 2020)",
+  "symbols": {
+    "NVDA": {
+      "symbol": "NVDA",
+      "sample_count": 152,
+      "fitted_beta": 1.1502,
+      "ladder": {
+        "last_close": {
+          "mae_bps": 124.1,
+          "rmse_bps": 155.84
+        },
+        "beta_adjusted_factor": {
+          "mae_bps": 95.51,
+          "rmse_bps": 126.03
+        },
+        "marketbridge": {
+          "mae_bps": 95.51,
+          "rmse_bps": 126.03
+        }
+      },
+      "split_conformal_coverage": {
+        "nominal_80": {
+          "nominal": 0.8,
+          "empirical": 0.664
+        },
+        "nominal_90": {
+          "nominal": 0.9,
+          "empirical": 0.836
+        },
+        "nominal_95": {
+          "nominal": 0.95,
+          "empirical": 0.855
+        },
+        "mean_band_width_bps": 408.0
+      }
+    },
+    "TSLA": {
+      "symbol": "TSLA",
+      "sample_count": 152,
+      "fitted_beta": 1.1506,
+      "ladder": {
+        "last_close": {
+          "mae_bps": 141.76,
+          "rmse_bps": 177.88
+        },
+        "beta_adjusted_factor": {
+          "mae_bps": 115.82,
+          "rmse_bps": 142.72
+        },
+        "marketbridge": {
+          "mae_bps": 115.82,
+          "rmse_bps": 142.72
+        }
+      },
+      "split_conformal_coverage": {
+        "nominal_80": {
+          "nominal": 0.8,
+          "empirical": 0.724
+        },
+        "nominal_90": {
+          "nominal": 0.9,
+          "empirical": 0.875
+        },
+        "nominal_95": {
+          "nominal": 0.95,
+          "empirical": 0.921
+        },
+        "mean_band_width_bps": 541.0
+      }
+    }
+  },
+  "sha256": "16d41ec8b4a9babbf109d108e3b163a0c35c6d4e099c0812ae689a796933d680",
+  "synthetic_suite": {
+    "data_mode": "SYNTHETIC_TEST",
+    "evaluation_kind": "synthetic_functional_tests",
+    "model_version": "synthetic-rules-v1.0.0",
+    "summary": {
+      "total": 12,
+      "passed": 12,
+      "failed": 0
+    },
+    "cases": [
+      {
+        "scenario_id": "normal",
+        "symbol": "NVDA",
+        "metrics": {
+          "availability_pct": 100.0,
+          "quarantined_count": 0,
+          "accepted_count": 143,
+          "recovery_seconds": null,
+          "mae_bps": 0.04563377307119297,
+          "baseline_mae_bps": 0.0,
+          "final_equity": 37.11783018,
+          "baseline_final_equity": 37.11783018,
+          "checks": [
+            {
+              "name": "Complete deterministic timeline",
+              "passed": true,
+              "detail": "Exactly 61 receipt-ordered snapshots, seconds 0\u201360."
+            },
+            {
+              "name": "Unavailable means blocked",
+              "passed": true,
+              "detail": "Missing reference never permits new simulated exposure."
+            },
+            {
+              "name": "Common ex-post outcome",
+              "passed": true,
+              "detail": "All remaining positions use the same independent synthetic outcome; unresolved outcomes cannot pass."
+            },
+            {
+              "name": "Permanent liquidation",
+              "passed": true,
+              "detail": "A liquidated reference account cannot silently reopen."
+            },
+            {
+              "name": "Normal evidence remains available",
+              "passed": true,
+              "detail": "Fresh small moves remain qualified under the fixed fixture policy."
+            }
+          ]
+        }
+      },
+      {
+        "scenario_id": "normal",
+        "symbol": "TSLA",
+        "metrics": {
+          "availability_pct": 100.0,
+          "quarantined_count": 0,
+          "accepted_count": 143,
+          "recovery_seconds": null,
+          "mae_bps": 0.04563377512898224,
+          "baseline_mae_bps": 0.0,
+          "final_equity": 70.5340466,
+          "baseline_final_equity": 70.5340466,
+          "checks": [
+            {
+              "name": "Complete deterministic timeline",
+              "passed": true,
+              "detail": "Exactly 61 receipt-ordered snapshots, seconds 0\u201360."
+            },
+            {
+              "name": "Unavailable means blocked",
+              "passed": true,
+              "detail": "Missing reference never permits new simulated exposure."
+            },
+            {
+              "name": "Common ex-post outcome",
+              "passed": true,
+              "detail": "All remaining positions use the same independent synthetic outcome; unresolved outcomes cannot pass."
+            },
+            {
+              "name": "Permanent liquidation",
+              "passed": true,
+              "detail": "A liquidated reference account cannot silently reopen."
+            },
+            {
+              "name": "Normal evidence remains available",
+              "passed": true,
+              "detail": "Fresh small moves remain qualified under the fixed fixture policy."
+            }
+          ]
+        }
+      },
+      {
+        "scenario_id": "bad-print",
+        "symbol": "NVDA",
+        "metrics": {
+          "availability_pct": 98.36065573770492,
+          "quarantined_count": 1,
+          "accepted_count": 142,
+          "recovery_seconds": 1.0,
+          "mae_bps": 0.0433757447616534,
+          "baseline_mae_bps": 39.34426229041583,
+          "final_equity": 37.11783018,
+          "baseline_final_equity": -7.155539210000001,
+          "checks": [
+            {
+              "name": "Complete deterministic timeline",
+              "passed": true,
+              "detail": "Exactly 61 receipt-ordered snapshots, seconds 0\u201360."
+            },
+            {
+              "name": "Unavailable means blocked",
+              "passed": true,
+              "detail": "Missing reference never permits new simulated exposure."
+            },
+            {
+              "name": "Common ex-post outcome",
+              "passed": true,
+              "detail": "All remaining positions use the same independent synthetic outcome; unresolved outcomes cannot pass."
+            },
+            {
+              "name": "Permanent liquidation",
+              "passed": true,
+              "detail": "A liquidated reference account cannot silently reopen."
+            },
+            {
+              "name": "Unsupported print quarantined",
+              "passed": true,
+              "detail": "The isolated 24% synthetic print cannot set the guarded reference."
+            },
+            {
+              "name": "Feed correction restores evidence",
+              "passed": true,
+              "detail": "The next qualified observation restores the reference without accepting the bad print."
+            }
+          ]
+        }
+      },
+      {
+        "scenario_id": "bad-print",
+        "symbol": "TSLA",
+        "metrics": {
+          "availability_pct": 98.36065573770492,
+          "quarantined_count": 1,
+          "accepted_count": 142,
+          "recovery_seconds": 1.0,
+          "mae_bps": 0.04337574038258222,
+          "baseline_mae_bps": 39.344262298859675,
+          "final_equity": 70.5340466,
+          "baseline_final_equity": -13.597484930000022,
+          "checks": [
+            {
+              "name": "Complete deterministic timeline",
+              "passed": true,
+              "detail": "Exactly 61 receipt-ordered snapshots, seconds 0\u201360."
+            },
+            {
+              "name": "Unavailable means blocked",
+              "passed": true,
+              "detail": "Missing reference never permits new simulated exposure."
+            },
+            {
+              "name": "Common ex-post outcome",
+              "passed": true,
+              "detail": "All remaining positions use the same independent synthetic outcome; unresolved outcomes cannot pass."
+            },
+            {
+              "name": "Permanent liquidation",
+              "passed": true,
+              "detail": "A liquidated reference account cannot silently reopen."
+            },
+            {
+              "name": "Unsupported print quarantined",
+              "passed": true,
+              "detail": "The isolated 24% synthetic print cannot set the guarded reference."
+            },
+            {
+              "name": "Feed correction restores evidence",
+              "passed": true,
+              "detail": "The next qualified observation restores the reference without accepting the bad print."
+            }
+          ]
+        }
+      },
+      {
+        "scenario_id": "genuine-move",
+        "symbol": "NVDA",
+        "metrics": {
+          "availability_pct": 95.08196721311475,
+          "quarantined_count": 4,
+          "accepted_count": 138,
+          "recovery_seconds": 3.0,
+          "mae_bps": 0.04322251724100466,
+          "baseline_mae_bps": 0.0,
+          "final_equity": 3.6604102931558486,
+          "baseline_final_equity": 3.6500000000000057,
+          "checks": [
+            {
+              "name": "Complete deterministic timeline",
+              "passed": true,
+              "detail": "Exactly 61 receipt-ordered snapshots, seconds 0\u201360."
+            },
+            {
+              "name": "Unavailable means blocked",
+              "passed": true,
+              "detail": "Missing reference never permits new simulated exposure."
+            },
+            {
+              "name": "Common ex-post outcome",
+              "passed": true,
+              "detail": "All remaining positions use the same independent synthetic outcome; unresolved outcomes cannot pass."
+            },
+            {
+              "name": "Permanent liquidation",
+              "passed": true,
+              "detail": "A liquidated reference account cannot silently reopen."
+            },
+            {
+              "name": "Wait for independent evidence",
+              "passed": true,
+              "detail": "Repeated updates from the first family cannot establish corroboration."
+            },
+            {
+              "name": "Admit genuine repricing",
+              "passed": true,
+              "detail": "An independent family at 27 admits the stock-specific move despite flat QQQ."
+            }
+          ]
+        }
+      },
+      {
+        "scenario_id": "genuine-move",
+        "symbol": "TSLA",
+        "metrics": {
+          "availability_pct": 95.08196721311475,
+          "quarantined_count": 4,
+          "accepted_count": 138,
+          "recovery_seconds": 3.0,
+          "mae_bps": 0.0432225234119305,
+          "baseline_mae_bps": 0.0,
+          "final_equity": 6.955782411994036,
+          "baseline_final_equity": 6.935999999999964,
+          "checks": [
+            {
+              "name": "Complete deterministic timeline",
+              "passed": true,
+              "detail": "Exactly 61 receipt-ordered snapshots, seconds 0\u201360."
+            },
+            {
+              "name": "Unavailable means blocked",
+              "passed": true,
+              "detail": "Missing reference never permits new simulated exposure."
+            },
+            {
+              "name": "Common ex-post outcome",
+              "passed": true,
+              "detail": "All remaining positions use the same independent synthetic outcome; unresolved outcomes cannot pass."
+            },
+            {
+              "name": "Permanent liquidation",
+              "passed": true,
+              "detail": "A liquidated reference account cannot silently reopen."
+            },
+            {
+              "name": "Wait for independent evidence",
+              "passed": true,
+              "detail": "Repeated updates from the first family cannot establish corroboration."
+            },
+            {
+              "name": "Admit genuine repricing",
+              "passed": true,
+              "detail": "An independent family at 27 admits the stock-specific move despite flat QQQ."
+            }
+          ]
+        }
+      },
+      {
+        "scenario_id": "dropout",
+        "symbol": "NVDA",
+        "metrics": {
+          "availability_pct": 78.68852459016394,
+          "quarantined_count": 0,
+          "accepted_count": 112,
+          "recovery_seconds": null,
+          "mae_bps": 0.19508456015287132,
+          "baseline_mae_bps": 3.9038455841009,
+          "final_equity": 37.11783018,
+          "baseline_final_equity": 37.11783018,
+          "checks": [
+            {
+              "name": "Complete deterministic timeline",
+              "passed": true,
+              "detail": "Exactly 61 receipt-ordered snapshots, seconds 0\u201360."
+            },
+            {
+              "name": "Unavailable means blocked",
+              "passed": true,
+              "detail": "Missing reference never permits new simulated exposure."
+            },
+            {
+              "name": "Common ex-post outcome",
+              "passed": true,
+              "detail": "All remaining positions use the same independent synthetic outcome; unresolved outcomes cannot pass."
+            },
+            {
+              "name": "Permanent liquidation",
+              "passed": true,
+              "detail": "A liquidated reference account cannot silently reopen."
+            },
+            {
+              "name": "Freshness timers degrade state",
+              "passed": true,
+              "detail": "Underlying age >5 seconds warns; >10 seconds removes the current reference."
+            },
+            {
+              "name": "Fresh feed restores reference",
+              "passed": true,
+              "detail": "Evidence returns at second 44 without rewriting outage history."
+            }
+          ]
+        }
+      },
+      {
+        "scenario_id": "dropout",
+        "symbol": "TSLA",
+        "metrics": {
+          "availability_pct": 78.68852459016394,
+          "quarantined_count": 0,
+          "accepted_count": 112,
+          "recovery_seconds": null,
+          "mae_bps": 0.19508455762850171,
+          "baseline_mae_bps": 3.9038456206643484,
+          "final_equity": 70.5340466,
+          "baseline_final_equity": 70.5340466,
+          "checks": [
+            {
+              "name": "Complete deterministic timeline",
+              "passed": true,
+              "detail": "Exactly 61 receipt-ordered snapshots, seconds 0\u201360."
+            },
+            {
+              "name": "Unavailable means blocked",
+              "passed": true,
+              "detail": "Missing reference never permits new simulated exposure."
+            },
+            {
+              "name": "Common ex-post outcome",
+              "passed": true,
+              "detail": "All remaining positions use the same independent synthetic outcome; unresolved outcomes cannot pass."
+            },
+            {
+              "name": "Permanent liquidation",
+              "passed": true,
+              "detail": "A liquidated reference account cannot silently reopen."
+            },
+            {
+              "name": "Freshness timers degrade state",
+              "passed": true,
+              "detail": "Underlying age >5 seconds warns; >10 seconds removes the current reference."
+            },
+            {
+              "name": "Fresh feed restores reference",
+              "passed": true,
+              "detail": "Evidence returns at second 44 without rewriting outage history."
+            }
+          ]
+        }
+      },
+      {
+        "scenario_id": "reopening",
+        "symbol": "NVDA",
+        "metrics": {
+          "availability_pct": 98.36065573770492,
+          "quarantined_count": 1,
+          "accepted_count": 128,
+          "recovery_seconds": 0.0,
+          "mae_bps": 0.6649967404369442,
+          "baseline_mae_bps": 0.09698979559360463,
+          "final_equity": 14.599999999999994,
+          "baseline_final_equity": 14.599999999999994,
+          "checks": [
+            {
+              "name": "Complete deterministic timeline",
+              "passed": true,
+              "detail": "Exactly 61 receipt-ordered snapshots, seconds 0\u201360."
+            },
+            {
+              "name": "Unavailable means blocked",
+              "passed": true,
+              "detail": "Missing reference never permits new simulated exposure."
+            },
+            {
+              "name": "Common ex-post outcome",
+              "passed": true,
+              "detail": "All remaining positions use the same independent synthetic outcome; unresolved outcomes cannot pass."
+            },
+            {
+              "name": "Permanent liquidation",
+              "passed": true,
+              "detail": "A liquidated reference account cannot silently reopen."
+            },
+            {
+              "name": "Verified auction admits reopening",
+              "passed": true,
+              "detail": "The official-auction fixture permits the specifically authorized single-reference exception."
+            }
+          ]
+        }
+      },
+      {
+        "scenario_id": "reopening",
+        "symbol": "TSLA",
+        "metrics": {
+          "availability_pct": 98.36065573770492,
+          "quarantined_count": 1,
+          "accepted_count": 128,
+          "recovery_seconds": 0.0,
+          "mae_bps": 0.6649967509926302,
+          "baseline_mae_bps": 0.09698980787299888,
+          "final_equity": 27.744000000000014,
+          "baseline_final_equity": 27.744000000000014,
+          "checks": [
+            {
+              "name": "Complete deterministic timeline",
+              "passed": true,
+              "detail": "Exactly 61 receipt-ordered snapshots, seconds 0\u201360."
+            },
+            {
+              "name": "Unavailable means blocked",
+              "passed": true,
+              "detail": "Missing reference never permits new simulated exposure."
+            },
+            {
+              "name": "Common ex-post outcome",
+              "passed": true,
+              "detail": "All remaining positions use the same independent synthetic outcome; unresolved outcomes cannot pass."
+            },
+            {
+              "name": "Permanent liquidation",
+              "passed": true,
+              "detail": "A liquidated reference account cannot silently reopen."
+            },
+            {
+              "name": "Verified auction admits reopening",
+              "passed": true,
+              "detail": "The official-auction fixture permits the specifically authorized single-reference exception."
+            }
+          ]
+        }
+      },
+      {
+        "scenario_id": "single-source",
+        "symbol": "NVDA",
+        "metrics": {
+          "availability_pct": 39.34426229508197,
+          "quarantined_count": 50,
+          "accepted_count": 93,
+          "recovery_seconds": null,
+          "mae_bps": 0.0,
+          "baseline_mae_bps": 0.0,
+          "final_equity": 3.7577479999999923,
+          "baseline_final_equity": 3.6500000000000057,
+          "checks": [
+            {
+              "name": "Complete deterministic timeline",
+              "passed": true,
+              "detail": "Exactly 61 receipt-ordered snapshots, seconds 0\u201360."
+            },
+            {
+              "name": "Unavailable means blocked",
+              "passed": true,
+              "detail": "Missing reference never permits new simulated exposure."
+            },
+            {
+              "name": "Common ex-post outcome",
+              "passed": true,
+              "detail": "All remaining positions use the same independent synthetic outcome; unresolved outcomes cannot pass."
+            },
+            {
+              "name": "Permanent liquidation",
+              "passed": true,
+              "detail": "A liquidated reference account cannot silently reopen."
+            },
+            {
+              "name": "Same-family repetition cannot recover",
+              "passed": true,
+              "detail": "The genuine jump remains abstained because a reseller is not an independent family."
+            },
+            {
+              "name": "Abstention does not erase liability",
+              "passed": true,
+              "detail": "The final common outcome reveals the held position's loss despite unresolved current valuation."
+            }
+          ]
+        }
+      },
+      {
+        "scenario_id": "single-source",
+        "symbol": "TSLA",
+        "metrics": {
+          "availability_pct": 39.34426229508197,
+          "quarantined_count": 50,
+          "accepted_count": 93,
+          "recovery_seconds": null,
+          "mae_bps": 0.0,
+          "baseline_mae_bps": 0.0,
+          "final_equity": 7.140750720000014,
+          "baseline_final_equity": 6.935999999999964,
+          "checks": [
+            {
+              "name": "Complete deterministic timeline",
+              "passed": true,
+              "detail": "Exactly 61 receipt-ordered snapshots, seconds 0\u201360."
+            },
+            {
+              "name": "Unavailable means blocked",
+              "passed": true,
+              "detail": "Missing reference never permits new simulated exposure."
+            },
+            {
+              "name": "Common ex-post outcome",
+              "passed": true,
+              "detail": "All remaining positions use the same independent synthetic outcome; unresolved outcomes cannot pass."
+            },
+            {
+              "name": "Permanent liquidation",
+              "passed": true,
+              "detail": "A liquidated reference account cannot silently reopen."
+            },
+            {
+              "name": "Same-family repetition cannot recover",
+              "passed": true,
+              "detail": "The genuine jump remains abstained because a reseller is not an independent family."
+            },
+            {
+              "name": "Abstention does not erase liability",
+              "passed": true,
+              "detail": "The final common outcome reveals the held position's loss despite unresolved current valuation."
+            }
+          ]
+        }
+      }
+    ],
+    "limitations": [
+      "These are synthetic functional fixtures, not empirical stock forecasting or investment results.",
+      "MAE scores use synthetic truth; answered-case MAE must be read with availability and abstention.",
+      "The uncalibrated model range has no estimated coverage. No claim of a true weekend stock price is made.",
+      "Two tickers and repeated seconds do not provide independent real-world validation.",
+      "Liquidation fill-at-trigger-price, zero fees and one fixed long unit are explicit hypothetical simulator assumptions.",
+      "A single-source genuine jump remains unavailable; ex-post losses are still scored against the common independent outcome.",
+      "Paper methodology motivates interfaces and checks; no cited paper validates this implementation."
+    ],
+    "research": [
+      {
+        "title": "Effective Fair Pricing of International Mutual Funds",
+        "url": "https://ink.library.smu.edu.sg/lkcsb_research/1112/",
+        "application": "Security-level factor adjustment precedent; does not validate US-stock weekend estimates."
+      },
+      {
+        "title": "Price Discovery and Trading After Hours",
+        "url": "https://faculty.haas.berkeley.edu/hender/after_hours_price_discovery.pdf",
+        "application": "Distinguish useful after-hours information from noisy observations; test genuine jumps as well as bad prints."
+      },
+      {
+        "title": "Maximum Likelihood Estimation of Factor Models with Missing Data",
+        "url": "https://www.ecb.europa.eu/pub/pdf/scpwps/ecbwp1189.pdf",
+        "application": "Preserve input availability; stale observations do not become fresh zero returns."
+      },
+      {
+        "title": "Adaptive Conformal Inference Under Distribution Shift",
+        "url": "https://proceedings.neurips.cc/paper/2021/hash/0d441de75945e5acbc865406fc9a2559-Abstract.html",
+        "application": "Keep observable forecast targets separate; demo ranges remain explicitly uncalibrated."
+      },
+      {
+        "title": "The Probability of Backtest Overfitting",
+        "url": "https://carmamaths.org/resources/jon/backtest2.pdf",
+        "application": "Freeze experiments and distinguish synthetic checks from untouched empirical evidence."
+      },
+      {
+        "title": "Selective Classification for Deep Neural Networks",
+        "url": "https://papers.neurips.cc/paper_files/paper/2017/hash/4a8423d5e91fda00bb7e46540e2b0cf1-Abstract.html",
+        "application": "Report answer availability and abstention alongside error; IID guarantees do not transfer here."
+      }
+    ]
+  },
+  "summary": {
+    "total": 12,
+    "passed": 12,
+    "failed": 0
+  }
+}
